@@ -1,0 +1,15 @@
+/build/
+/cmake-build-*/
+/*.user
+/*.pro.user
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+/data/productos.txt.user
+# Archivos generados por Qt Creator
+moc_*
+ui_*.h
+qrc_*.cpp
