@@ -11,3 +11,12 @@ formularios o representar elementos no terminados, facilitando el desarrollo y l
 visualización del proyecto. 
 
 */
+#include <algorithm>
+
+namespace Utils {
+    std::string toUpper(const std::string &text) {
+        std::string result = text;
+        std::transform(result.begin(), result.end(), result.begin(), ::toupper);
+        return result;
+    }
+}
