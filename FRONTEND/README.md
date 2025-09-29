@@ -1,6 +1,6 @@
 # Tienda Belleza - Frontend Qt (C++)
 
-Proyecto ejemplo: interfaz gráfica con Qt (Widgets) para gestionar productos de belleza.
+Proyecto: interfaz gráfica con Qt (Widgets) para gestionar productos de belleza.
 
 ## Estructura
 - `src/` : código fuente
@@ -12,9 +12,3 @@ Proyecto ejemplo: interfaz gráfica con Qt (Widgets) para gestionar productos de
 - CMake >= 3.16
 - Qt6 (o Qt5, adaptar CMake)
 
-## Compilación (ejemplo)
-```bash
-mkdir build && cd build
-cmake ..
-cmake --build .
-./tienda_belleza
