@@ -23,7 +23,7 @@
       <layout class="QVBoxLayout" name="verticalLayoutForm">
        <item>
         <widget class="QLabel" name="labelTitle">
-         <property name="text"><string><b>Agregar producto</b></string></property>
+         <property name="text"><string>Agregar producto</string></property>
          <property name="alignment"><set>Qt::AlignCenter</set></property>
         </widget>
        </item>
@@ -103,7 +103,6 @@
       </layout>
      </widget>
     </item>
-
     <item>
      <layout class="QVBoxLayout" name="verticalLayoutRight">
       <item>

@@ -10,10 +10,8 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
-# incluye tus headers
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-# fuentes
 set(SRC
     src/main.cpp
     src/mainwindow.cpp
@@ -23,7 +21,6 @@ set(SRC
     src/console.cpp
 )
 
-# headers
 set(HEADERS
     include/mainwindow.h
     include/product.h
@@ -31,7 +28,7 @@ set(HEADERS
     include/utils.h
 )
 
-# ui
+# Usa ruta absoluta para el UI
 set(UI_FILES
     ui/mainwindow.ui
 )
