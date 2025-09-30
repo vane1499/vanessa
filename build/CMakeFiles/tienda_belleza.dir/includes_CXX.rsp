@@ -1,0 +1,1 @@
+-IC:/Users/Equipo/vanessa/build/tienda_belleza_autogen/include -IC:/Users/Equipo/vanessa/FRONTEND/include -isystem C:/Qt/6.5.3/mingw_64/include/QtCore -isystem C:/Qt/6.5.3/mingw_64/include -isystem "C:/Qt/6.5.3/mingw_64/mkspecs/win32-g++" -isystem C:/Qt/6.5.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.5.3/mingw_64/include/QtGui

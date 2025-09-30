@@ -28,16 +28,21 @@
         </widget>
        </item>
        <item>
-        <widget class="QFormLayout" name="formLayout">
+        <!-- CORREGIDO: QFormLayout ahora es layout -->
+        <layout class="QFormLayout" name="formLayout">
          <property name="labelAlignment"><set>Qt::AlignRight</set></property>
          <item row="0" column="0">
-          <widget class="QLabel" name="labelName"><property name="text"><string>Nombre:</string></property></widget>
+          <widget class="QLabel" name="labelName">
+           <property name="text"><string>Nombre:</string></property>
+          </widget>
          </item>
          <item row="0" column="1">
           <widget class="QLineEdit" name="lineName"/>
          </item>
          <item row="1" column="0">
-          <widget class="QLabel" name="labelPrice"><property name="text"><string>Precio:</string></property></widget>
+          <widget class="QLabel" name="labelPrice">
+           <property name="text"><string>Precio:</string></property>
+          </widget>
          </item>
          <item row="1" column="1">
           <widget class="QDoubleSpinBox" name="spinPrice">
@@ -47,13 +52,17 @@
           </widget>
          </item>
          <item row="2" column="0">
-          <widget class="QLabel" name="labelType"><property name="text"><string>Tipo:</string></property></widget>
+          <widget class="QLabel" name="labelType">
+           <property name="text"><string>Tipo:</string></property>
+          </widget>
          </item>
          <item row="2" column="1">
           <widget class="QLineEdit" name="lineType"/>
          </item>
          <item row="3" column="0">
-          <widget class="QLabel" name="labelExpiry"><property name="text"><string>Caducidad:</string></property></widget>
+          <widget class="QLabel" name="labelExpiry">
+           <property name="text"><string>Caducidad:</string></property>
+          </widget>
          </item>
          <item row="3" column="1">
           <widget class="QDateEdit" name="dateExpiry">
@@ -62,7 +71,9 @@
           </widget>
          </item>
          <item row="4" column="0">
-          <widget class="QLabel" name="labelImage"><property name="text"><string>Imagen:</string></property></widget>
+          <widget class="QLabel" name="labelImage">
+           <property name="text"><string>Imagen:</string></property>
+          </widget>
          </item>
          <item row="4" column="1">
           <layout class="QHBoxLayout" name="hLayoutImage">
@@ -76,7 +87,7 @@
            </item>
           </layout>
          </item>
-        </widget>
+        </layout> <!-- ✅ Cierre correcto del QFormLayout -->
        </item>
        <item>
         <layout class="QHBoxLayout" name="hButtons">
@@ -94,7 +105,7 @@
         </layout>
        </item>
        <item>
-        <widget class="QLabel" name="lblPreview" >
+        <widget class="QLabel" name="lblPreview">
          <property name="minimumHeight"><number>120</number></property>
          <property name="frameShape"><enum>QFrame::Box</enum></property>
          <property name="alignment"><set>Qt::AlignCenter</set></property>
@@ -108,7 +119,9 @@
       <item>
        <layout class="QHBoxLayout" name="hFilter">
         <item>
-         <widget class="QLabel" name="labelFilter"><property name="text"><string>Filtrar por tipo:</string></property></widget>
+         <widget class="QLabel" name="labelFilter">
+          <property name="text"><string>Filtrar por tipo:</string></property>
+         </widget>
         </item>
         <item>
          <widget class="QComboBox" name="comboFilter"/>
