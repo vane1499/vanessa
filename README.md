@@ -5,19 +5,57 @@ Desarrollada en **C++**, con **CMake** y compilador **MinGW**.
 
 ---
 
-## 🚀 Requisitos
+##  Requisitos
 
 Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
 
-* [CMake](https://cmake.org/download/) (≥ 3.22 recomendado)
-* [Qt 6](https://www.qt.io/download-open-source) con **MinGW** (ejemplo: `Qt 6.5.3 MinGW 11.2.0 64-bit`)
-* [MinGW](https://sourceforge.net/projects/mingw/) (si no lo tienes con Qt)
+1. **Git**
+   Para clonar el repositorio.
 
-⚠️ Asegúrate de que el compilador (`c++.exe` de MinGW) y `cmake.exe` estén en tu **PATH**.
+   * Descargar: [Git](https://git-scm.com/download/win)
+   * Verificar instalación:
+
+     ```powershell
+     git --version
+     ```
+
+2. **CMake** (≥ 3.22 recomendado)
+   Para generar el proyecto.
+
+   * Descargar: [CMake](https://cmake.org/download/)
+   * Verificar instalación:
+
+     ```powershell
+     cmake --version
+     ```
+
+3. **Qt 6 con MinGW**
+   Necesario para las ventanas gráficas (Qt Widgets).
+
+   * Descargar: [Qt Online Installer](https://www.qt.io/download-open-source)
+   * Durante la instalación, selecciona:
+
+     * Qt 6.x.x (ejemplo: **6.5.3**)
+     * Kit de compilación **MinGW 64-bit** (ejemplo: **MinGW 11.2.0**)
+   * Verificar que Qt y MinGW están instalados:
+
+     ```powershell
+     dir "C:\Qt\6.5.3\mingw_64\bin\uic.exe"
+     dir "C:\Qt\Tools\mingw1120_64\bin\g++.exe"
+     ```
+
+4. **MinGW (si no lo instalaste junto a Qt)**
+
+   * Descargar: [MinGW](https://sourceforge.net/projects/mingw/)
+   * Verificar instalación:
+
+     ```powershell
+     g++ --version
+     ```
 
 ---
 
-## 🛠️ Compilación
+##  Pasos para compilar
 
 1. Clona el repositorio:
 
@@ -26,19 +64,19 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
    cd tienda-belleza
    ```
 
-2. Genera la carpeta de compilación con CMake:
+2. Genera la carpeta de compilación:
 
    ```powershell
    cmake -S FRONTEND -B build -G "MinGW Makefiles"
    ```
 
-3. Compila el proyecto:
+3. Compila:
 
    ```powershell
    cmake --build build
    ```
 
-4. Ejecuta la aplicación:
+4. Ejecuta:
 
    ```powershell
    .\build\tienda_belleza.exe
@@ -48,24 +86,31 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
 
 ## 💻 Modos de ejecución
 
-### Modo gráfico (por defecto)
+* **Modo gráfico (Qt):**
 
-Al ejecutar `tienda_belleza.exe`, se abrirá la ventana principal de la aplicación Qt.
+  ```powershell
+  .\build\tienda_belleza.exe
+  ```
 
+* **Modo consola:**
 
----
-
-## 📂 Persistencia de datos
-
-Actualmente el proyecto guarda los datos en memoria, por lo que se pierden al cerrar la aplicación.
-Si deseas que la información se mantenga, deberás implementar persistencia en **archivos (CSV/JSON)** o en una **base de datos**.
-
----
-
-## ✅ Notas
-
-* **No subas la carpeta `build/` al repositorio.** Solo deben versionarse los archivos fuente (`FRONTEND/`, `src/`, `include/`, `ui/`, `CMakeLists.txt`).
-* Cada vez que clones el proyecto en una PC nueva, repite los pasos de compilación.
+  ```powershell
+  .\build\tienda_belleza.exe --console
+  ```
 
 ---
 
+##  Resumen de verificaciones
+
+Antes de compilar, revisa que todos los componentes estén instalados:
+
+```powershell
+git --version
+cmake --version
+g++ --version
+dir "C:\Qt\6.5.3\mingw_64\bin\uic.exe"
+```
+
+Si todos responden sin error, ya puedes compilar el proyecto 🚀
+
+---
