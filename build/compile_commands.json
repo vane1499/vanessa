@@ -1,0 +1,44 @@
+[
+{
+  "directory": "C:/Users/Equipo/vanessa/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/tienda_belleza.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tienda_belleza.dir\\tienda_belleza_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\Equipo\\vanessa\\build\\tienda_belleza_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/Equipo/vanessa/build/tienda_belleza_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/Equipo/vanessa/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/tienda_belleza.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tienda_belleza.dir\\src\\main.cpp.obj -c C:\\Users\\Equipo\\vanessa\\FRONTEND\\src\\main.cpp",
+  "file": "C:/Users/Equipo/vanessa/FRONTEND/src/main.cpp",
+  "output": "CMakeFiles/tienda_belleza.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Equipo/vanessa/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/tienda_belleza.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tienda_belleza.dir\\src\\mainwindow.cpp.obj -c C:\\Users\\Equipo\\vanessa\\FRONTEND\\src\\mainwindow.cpp",
+  "file": "C:/Users/Equipo/vanessa/FRONTEND/src/mainwindow.cpp",
+  "output": "CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj"
+},
+{
+  "directory": "C:/Users/Equipo/vanessa/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/tienda_belleza.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tienda_belleza.dir\\src\\product.cpp.obj -c C:\\Users\\Equipo\\vanessa\\FRONTEND\\src\\product.cpp",
+  "file": "C:/Users/Equipo/vanessa/FRONTEND/src/product.cpp",
+  "output": "CMakeFiles/tienda_belleza.dir/src/product.cpp.obj"
+},
+{
+  "directory": "C:/Users/Equipo/vanessa/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/tienda_belleza.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tienda_belleza.dir\\src\\store.cpp.obj -c C:\\Users\\Equipo\\vanessa\\FRONTEND\\src\\store.cpp",
+  "file": "C:/Users/Equipo/vanessa/FRONTEND/src/store.cpp",
+  "output": "CMakeFiles/tienda_belleza.dir/src/store.cpp.obj"
+},
+{
+  "directory": "C:/Users/Equipo/vanessa/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/tienda_belleza.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tienda_belleza.dir\\src\\utils.cpp.obj -c C:\\Users\\Equipo\\vanessa\\FRONTEND\\src\\utils.cpp",
+  "file": "C:/Users/Equipo/vanessa/FRONTEND/src/utils.cpp",
+  "output": "CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj"
+},
+{
+  "directory": "C:/Users/Equipo/vanessa/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/tienda_belleza.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tienda_belleza.dir\\src\\console.cpp.obj -c C:\\Users\\Equipo\\vanessa\\FRONTEND\\src\\console.cpp",
+  "file": "C:/Users/Equipo/vanessa/FRONTEND/src/console.cpp",
+  "output": "CMakeFiles/tienda_belleza.dir/src/console.cpp.obj"
+}
+]

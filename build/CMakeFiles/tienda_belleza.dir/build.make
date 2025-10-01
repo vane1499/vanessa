@@ -72,7 +72,7 @@ tienda_belleza_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/moc.exe
 tienda_belleza_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/uic.exe
 tienda_belleza_autogen/timestamp: CMakeFiles/tienda_belleza.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target tienda_belleza"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Equipo/vanessa/build/CMakeFiles/tienda_belleza_autogen.dir/AutogenInfo.json ""
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Equipo/vanessa/build/CMakeFiles/tienda_belleza_autogen.dir/AutogenInfo.json Debug
 	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Equipo/vanessa/build/tienda_belleza_autogen/timestamp
 
 CMakeFiles/tienda_belleza.dir/codegen:
@@ -83,105 +83,105 @@ CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.obj: C
 CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.obj: tienda_belleza_autogen/mocs_compilation.cpp
 CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.obj: CMakeFiles/tienda_belleza.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.obj"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\tienda_belleza.dir\tienda_belleza_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\tienda_belleza_autogen\mocs_compilation.cpp.obj -c C:\Users\Equipo\vanessa\build\tienda_belleza_autogen\mocs_compilation.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\tienda_belleza.dir\tienda_belleza_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\tienda_belleza_autogen\mocs_compilation.cpp.obj -c C:\Users\Equipo\vanessa\build\tienda_belleza_autogen\mocs_compilation.cpp
 
 CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.i"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\build\tienda_belleza_autogen\mocs_compilation.cpp > CMakeFiles\tienda_belleza.dir\tienda_belleza_autogen\mocs_compilation.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\build\tienda_belleza_autogen\mocs_compilation.cpp > CMakeFiles\tienda_belleza.dir\tienda_belleza_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.s"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\build\tienda_belleza_autogen\mocs_compilation.cpp -o CMakeFiles\tienda_belleza.dir\tienda_belleza_autogen\mocs_compilation.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\build\tienda_belleza_autogen\mocs_compilation.cpp -o CMakeFiles\tienda_belleza.dir\tienda_belleza_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/tienda_belleza.dir/src/main.cpp.obj: CMakeFiles/tienda_belleza.dir/flags.make
 CMakeFiles/tienda_belleza.dir/src/main.cpp.obj: CMakeFiles/tienda_belleza.dir/includes_CXX.rsp
 CMakeFiles/tienda_belleza.dir/src/main.cpp.obj: C:/Users/Equipo/vanessa/FRONTEND/src/main.cpp
 CMakeFiles/tienda_belleza.dir/src/main.cpp.obj: CMakeFiles/tienda_belleza.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tienda_belleza.dir/src/main.cpp.obj"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/main.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\main.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\main.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\main.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/main.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\main.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\main.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\main.cpp
 
 CMakeFiles/tienda_belleza.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tienda_belleza.dir/src/main.cpp.i"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\main.cpp > CMakeFiles\tienda_belleza.dir\src\main.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\main.cpp > CMakeFiles\tienda_belleza.dir\src\main.cpp.i
 
 CMakeFiles/tienda_belleza.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tienda_belleza.dir/src/main.cpp.s"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\main.cpp -o CMakeFiles\tienda_belleza.dir\src\main.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\main.cpp -o CMakeFiles\tienda_belleza.dir\src\main.cpp.s
 
 CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj: CMakeFiles/tienda_belleza.dir/flags.make
 CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj: CMakeFiles/tienda_belleza.dir/includes_CXX.rsp
 CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj: C:/Users/Equipo/vanessa/FRONTEND/src/mainwindow.cpp
 CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj: CMakeFiles/tienda_belleza.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\mainwindow.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\mainwindow.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\mainwindow.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\mainwindow.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\mainwindow.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\mainwindow.cpp
 
 CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.i"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\mainwindow.cpp > CMakeFiles\tienda_belleza.dir\src\mainwindow.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\mainwindow.cpp > CMakeFiles\tienda_belleza.dir\src\mainwindow.cpp.i
 
 CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.s"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\mainwindow.cpp -o CMakeFiles\tienda_belleza.dir\src\mainwindow.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\mainwindow.cpp -o CMakeFiles\tienda_belleza.dir\src\mainwindow.cpp.s
 
 CMakeFiles/tienda_belleza.dir/src/product.cpp.obj: CMakeFiles/tienda_belleza.dir/flags.make
 CMakeFiles/tienda_belleza.dir/src/product.cpp.obj: CMakeFiles/tienda_belleza.dir/includes_CXX.rsp
 CMakeFiles/tienda_belleza.dir/src/product.cpp.obj: C:/Users/Equipo/vanessa/FRONTEND/src/product.cpp
 CMakeFiles/tienda_belleza.dir/src/product.cpp.obj: CMakeFiles/tienda_belleza.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tienda_belleza.dir/src/product.cpp.obj"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/product.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\product.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\product.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\product.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/product.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\product.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\product.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\product.cpp
 
 CMakeFiles/tienda_belleza.dir/src/product.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tienda_belleza.dir/src/product.cpp.i"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\product.cpp > CMakeFiles\tienda_belleza.dir\src\product.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\product.cpp > CMakeFiles\tienda_belleza.dir\src\product.cpp.i
 
 CMakeFiles/tienda_belleza.dir/src/product.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tienda_belleza.dir/src/product.cpp.s"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\product.cpp -o CMakeFiles\tienda_belleza.dir\src\product.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\product.cpp -o CMakeFiles\tienda_belleza.dir\src\product.cpp.s
 
 CMakeFiles/tienda_belleza.dir/src/store.cpp.obj: CMakeFiles/tienda_belleza.dir/flags.make
 CMakeFiles/tienda_belleza.dir/src/store.cpp.obj: CMakeFiles/tienda_belleza.dir/includes_CXX.rsp
 CMakeFiles/tienda_belleza.dir/src/store.cpp.obj: C:/Users/Equipo/vanessa/FRONTEND/src/store.cpp
 CMakeFiles/tienda_belleza.dir/src/store.cpp.obj: CMakeFiles/tienda_belleza.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tienda_belleza.dir/src/store.cpp.obj"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/store.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\store.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\store.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\store.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/store.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\store.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\store.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\store.cpp
 
 CMakeFiles/tienda_belleza.dir/src/store.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tienda_belleza.dir/src/store.cpp.i"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\store.cpp > CMakeFiles\tienda_belleza.dir\src\store.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\store.cpp > CMakeFiles\tienda_belleza.dir\src\store.cpp.i
 
 CMakeFiles/tienda_belleza.dir/src/store.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tienda_belleza.dir/src/store.cpp.s"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\store.cpp -o CMakeFiles\tienda_belleza.dir\src\store.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\store.cpp -o CMakeFiles\tienda_belleza.dir\src\store.cpp.s
 
 CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj: CMakeFiles/tienda_belleza.dir/flags.make
 CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj: CMakeFiles/tienda_belleza.dir/includes_CXX.rsp
 CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj: C:/Users/Equipo/vanessa/FRONTEND/src/utils.cpp
 CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj: CMakeFiles/tienda_belleza.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\utils.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\utils.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\utils.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\utils.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\utils.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\utils.cpp
 
 CMakeFiles/tienda_belleza.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tienda_belleza.dir/src/utils.cpp.i"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\utils.cpp > CMakeFiles\tienda_belleza.dir\src\utils.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\utils.cpp > CMakeFiles\tienda_belleza.dir\src\utils.cpp.i
 
 CMakeFiles/tienda_belleza.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tienda_belleza.dir/src/utils.cpp.s"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\utils.cpp -o CMakeFiles\tienda_belleza.dir\src\utils.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\utils.cpp -o CMakeFiles\tienda_belleza.dir\src\utils.cpp.s
 
 CMakeFiles/tienda_belleza.dir/src/console.cpp.obj: CMakeFiles/tienda_belleza.dir/flags.make
 CMakeFiles/tienda_belleza.dir/src/console.cpp.obj: CMakeFiles/tienda_belleza.dir/includes_CXX.rsp
 CMakeFiles/tienda_belleza.dir/src/console.cpp.obj: C:/Users/Equipo/vanessa/FRONTEND/src/console.cpp
 CMakeFiles/tienda_belleza.dir/src/console.cpp.obj: CMakeFiles/tienda_belleza.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tienda_belleza.dir/src/console.cpp.obj"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/console.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\console.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\console.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\console.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tienda_belleza.dir/src/console.cpp.obj -MF CMakeFiles\tienda_belleza.dir\src\console.cpp.obj.d -o CMakeFiles\tienda_belleza.dir\src\console.cpp.obj -c C:\Users\Equipo\vanessa\FRONTEND\src\console.cpp
 
 CMakeFiles/tienda_belleza.dir/src/console.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tienda_belleza.dir/src/console.cpp.i"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\console.cpp > CMakeFiles\tienda_belleza.dir\src\console.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\FRONTEND\src\console.cpp > CMakeFiles\tienda_belleza.dir\src\console.cpp.i
 
 CMakeFiles/tienda_belleza.dir/src/console.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tienda_belleza.dir/src/console.cpp.s"
-	C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\console.cpp -o CMakeFiles\tienda_belleza.dir\src\console.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\FRONTEND\src\console.cpp -o CMakeFiles\tienda_belleza.dir\src\console.cpp.s
 
 # Object files for target tienda_belleza
 tienda_belleza_OBJECTS = \

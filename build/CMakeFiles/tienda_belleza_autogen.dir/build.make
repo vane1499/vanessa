@@ -71,7 +71,7 @@ tienda_belleza_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/moc.exe
 tienda_belleza_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/uic.exe
 tienda_belleza_autogen/timestamp: CMakeFiles/tienda_belleza_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target tienda_belleza"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Equipo/vanessa/build/CMakeFiles/tienda_belleza_autogen.dir/AutogenInfo.json ""
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Equipo/vanessa/build/CMakeFiles/tienda_belleza_autogen.dir/AutogenInfo.json Debug
 	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Equipo/vanessa/build/tienda_belleza_autogen/timestamp
 
 CMakeFiles/tienda_belleza_autogen.dir/codegen:

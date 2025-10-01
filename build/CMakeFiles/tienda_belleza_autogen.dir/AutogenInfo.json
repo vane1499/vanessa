@@ -102,7 +102,8 @@
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake",
-		"C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-CXX.cmake",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/Linker/GNU.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake",
@@ -340,7 +341,6 @@
 		"MINGW_HAS_SECURE_API=1",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
-		"QT_NO_DEBUG",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -365,12 +365,12 @@
 		"C:/Qt/6.5.3/mingw_64/mkspecs/win32-g++",
 		"C:/Qt/6.5.3/mingw_64/include/QtWidgets",
 		"C:/Qt/6.5.3/mingw_64/include/QtGui",
-		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
-		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
-		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
-		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
-		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
-		"C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+		"C:/msys64/ucrt64/include/c++/15.2.0",
+		"C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32",
+		"C:/msys64/ucrt64/include/c++/15.2.0/backward",
+		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include",
+		"C:/msys64/ucrt64/include",
+		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -384,7 +384,7 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"C:/Qt/Tools/mingw1120_64/bin/c++.exe",
+		"C:/msys64/ucrt64/bin/g++.exe",
 		"-std=gnu++17",
 		"-w",
 		"-dM",
