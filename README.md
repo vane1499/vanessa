@@ -60,8 +60,8 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
 1. Clona el repositorio:
 
    ```powershell
-   git clone https://github.com/usuario/tienda-belleza.git
-   cd tienda-belleza
+   git clone https://github.com/vane1499/vanessa.git
+   cd vanessa
    ```
 
 2. Genera la carpeta de compilación:
@@ -84,19 +84,13 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
 
 ---
 
-## 💻 Modos de ejecución
+## 💻 Modo de ejecución
 
-* **Modo gráfico (Qt):**
 
   ```powershell
   .\build\tienda_belleza.exe
   ```
 
-* **Modo consola:**
-
-  ```powershell
-  .\build\tienda_belleza.exe --console
-  ```
 
 ---
 
