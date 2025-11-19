@@ -38,11 +38,20 @@ set(HEADERS
 # recoger todos los .ui (asegura que si hay más, se incluyan)
 file(GLOB UI_FILES "${CMAKE_SOURCE_DIR}/ui/*.ui")
 
+# Asegurar buenas prácticas de compilación
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 qt_add_executable(tienda_belleza
     ${SRC}
     ${HEADERS}
     ${UI_FILES}
 )
+# Incluir directorios para todos los headers
+target_include_directories(tienda_belleza PRIVATE
+    ${CMAKE_SOURCE_DIR}/include
+)
+
 
 # Asegurar que el compilador vea los headers generados por autogen
 # (el directorio exacto se crea en build/tienda_belleza_autogen/include)
