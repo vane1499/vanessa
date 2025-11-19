@@ -16,3 +16,10 @@ public:
 private:
     std::vector<Product> m_products;
 };
+class Store {
+public:
+    QString dataFilePath();
+    
+    ...
+};
+

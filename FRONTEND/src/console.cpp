@@ -1,3 +1,6 @@
+#include <QDir>
+
+#include "console.h"
 #include <iostream>
 #include <QString>
 #include <QCoreApplication>
@@ -5,13 +8,18 @@
 #include <QTextStream>
 
 void printMenu() {
-    std::cout << "=== Tienda Belleza (Consola) ===\n";
-    std::cout << "1) Listar productos\n";
-    std::cout << "2) Agregar producto\n";
-    std::cout << "3) Eliminar producto (por índice)\n";
-    std::cout << "4) Guardar y salir\n";
-    std::cout << "Elija una opción: ";
+    std::cout << R"(
+╔══════════════════════════════════════╗
+║         🌸 TIENDA BELLEZA 🌸         ║
+╠══════════════════════════════════════╣
+║  1) Listar productos                 ║
+║  2) Agregar producto                 ║
+║  3) Eliminar producto                ║
+║  4) Guardar y salir                  ║
+╚══════════════════════════════════════╝
+Seleccione una opción: )";
 }
+
 
 int main_console(int argc, char** argv) {
     QCoreApplication app(argc, argv);
@@ -51,7 +59,7 @@ int main_console(int argc, char** argv) {
             std::cout << "Eliminado (si existía).\n";
         } else if (opt == 4) {
             s.saveToFile(path);
-            std::cout << "Guardado. Saliendo...\n";
+            std::cout << "Guardado. Saliendo.....\n";
             break;
         } else {
             std::cout << "Opción inválida\n";
@@ -59,3 +67,4 @@ int main_console(int argc, char** argv) {
     }
     return 0;
 }
+

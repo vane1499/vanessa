@@ -61,4 +61,23 @@ target_link_libraries(tienda_belleza PRIVATE Qt6::Widgets)
 
 qt_finalize_executable(tienda_belleza)
 
+add_executable(tienda_belleza_console
+    src/console.cpp
+    src/main_console.cpp
+    src/store.cpp
+    src/product.cpp
+    src/utils.cpp
+    include/console.h
+)
+
+# Este flag es LO MÁS IMPORTANTE:
+set_target_properties(tienda_belleza_console PROPERTIES
+    WIN32_EXECUTABLE OFF
+)
+
+target_include_directories(tienda_belleza_console PRIVATE include)
+
+target_link_libraries(tienda_belleza_console PRIVATE Qt6::Core)
+
+
 install(TARGETS tienda_belleza DESTINATION bin)

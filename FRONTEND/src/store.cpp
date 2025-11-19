@@ -1,3 +1,6 @@
+#include <QStandardPaths>
+#include <QDir>
+
 #include "store.h"
 #include <QFile>
 #include <QTextStream>
@@ -18,6 +21,7 @@ bool Store::loadFromFile(const QString& path) {
 }
 
 bool Store::saveToFile(const QString& path) const {
+    QString path = dataFilePath();
     QFile f(path);
     if (!f.open(QIODevice::WriteOnly | QIODevice::Text)) return false;
     QTextStream out(&f);
@@ -51,4 +55,11 @@ std::vector<Product> Store::filteredByType(const QString& type) const {
         if (p.type().compare(type, Qt::CaseInsensitive) == 0) out.push_back(p);
     }
     return out;
+}
+
+// Ruta al archivo de datos en el directorio de datos de la aplicación
+QString Store::dataFilePath() {
+    QString dir = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QDir().mkpath(dir);  // crea la carpeta si no existe
+    return dir + "/productos.txt";
 }
