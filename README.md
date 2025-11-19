@@ -86,12 +86,14 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
 
 ## 💻 Modo de ejecución
 
-
+PARA CORRER EL DESKTO
   ```powershell
   .\build\tienda_belleza.exe
   ```
-
-
+PARA CORRER LA CONSOLA
+  ```powershell
+  .\build\tienda_belleza_console.exe
+  ```
 ---
 
 ##  Resumen de verificaciones
