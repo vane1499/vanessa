@@ -1,6 +1,0 @@
-{
-  "cmake.generator": "MinGW Makefiles",
-  "cmake.configureSettings": {
-    "CMAKE_PREFIX_PATH": "C:/Qt/6.5.3/mingw_64"
-  }
-}

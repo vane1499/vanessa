@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Profecional\vanessa\FRONTEND
+CMAKE_SOURCE_DIR = C:\Users\Equipo\vanessa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Profecional\vanessa\build
+CMAKE_BINARY_DIR = C:\Users\Equipo\vanessa\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,56 +84,11 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Profecional\vanessa\build\CMakeFiles C:\Users\Profecional\vanessa\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles C:\Users\Equipo\vanessa\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Profecional\vanessa\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -161,310 +116,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tienda_belleza
+# Target rules for targets named modelos
 
 # Build rule for target.
-tienda_belleza: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_belleza
-.PHONY : tienda_belleza
+modelos: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 modelos
+.PHONY : modelos
 
 # fast build rule for target.
-tienda_belleza/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/build
-.PHONY : tienda_belleza/fast
+modelos/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos.dir\build.make src/CMakeFiles/modelos.dir/build
+.PHONY : modelos/fast
 
 #=============================================================================
-# Target rules for targets named tienda_belleza_console
+# Target rules for targets named persistencia
 
 # Build rule for target.
-tienda_belleza_console: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_belleza_console
-.PHONY : tienda_belleza_console
+persistencia: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 persistencia
+.PHONY : persistencia
 
 # fast build rule for target.
-tienda_belleza_console/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/build
-.PHONY : tienda_belleza_console/fast
+persistencia/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia.dir\build.make src/CMakeFiles/persistencia.dir/build
+.PHONY : persistencia/fast
 
 #=============================================================================
-# Target rules for targets named tienda_belleza_autogen_timestamp_deps
+# Target rules for targets named managers
 
 # Build rule for target.
-tienda_belleza_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_belleza_autogen_timestamp_deps
-.PHONY : tienda_belleza_autogen_timestamp_deps
+managers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 managers
+.PHONY : managers
 
 # fast build rule for target.
-tienda_belleza_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_autogen_timestamp_deps.dir\build.make CMakeFiles/tienda_belleza_autogen_timestamp_deps.dir/build
-.PHONY : tienda_belleza_autogen_timestamp_deps/fast
+managers/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers.dir\build.make src/CMakeFiles/managers.dir/build
+.PHONY : managers/fast
 
 #=============================================================================
-# Target rules for targets named tienda_belleza_autogen
+# Target rules for targets named tienda_consola
 
 # Build rule for target.
-tienda_belleza_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_belleza_autogen
-.PHONY : tienda_belleza_autogen
+tienda_consola: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_consola
+.PHONY : tienda_consola
 
 # fast build rule for target.
-tienda_belleza_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_autogen.dir\build.make CMakeFiles/tienda_belleza_autogen.dir/build
-.PHONY : tienda_belleza_autogen/fast
+tienda_consola/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola.dir\build.make src/CMakeFiles/tienda_consola.dir/build
+.PHONY : tienda_consola/fast
 
 #=============================================================================
-# Target rules for targets named tienda_belleza_console_autogen_timestamp_deps
+# Target rules for targets named tienda_tui
 
 # Build rule for target.
-tienda_belleza_console_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_belleza_console_autogen_timestamp_deps
-.PHONY : tienda_belleza_console_autogen_timestamp_deps
+tienda_tui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_tui
+.PHONY : tienda_tui
 
 # fast build rule for target.
-tienda_belleza_console_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console_autogen_timestamp_deps.dir\build.make CMakeFiles/tienda_belleza_console_autogen_timestamp_deps.dir/build
-.PHONY : tienda_belleza_console_autogen_timestamp_deps/fast
-
-#=============================================================================
-# Target rules for targets named tienda_belleza_console_autogen
-
-# Build rule for target.
-tienda_belleza_console_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_belleza_console_autogen
-.PHONY : tienda_belleza_console_autogen
-
-# fast build rule for target.
-tienda_belleza_console_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console_autogen.dir\build.make CMakeFiles/tienda_belleza_console_autogen.dir/build
-.PHONY : tienda_belleza_console_autogen/fast
-
-src/console.obj: src/console.cpp.obj
-.PHONY : src/console.obj
-
-# target to build an object file
-src/console.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/console.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/console.cpp.obj
-.PHONY : src/console.cpp.obj
-
-src/console.i: src/console.cpp.i
-.PHONY : src/console.i
-
-# target to preprocess a source file
-src/console.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/console.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/console.cpp.i
-.PHONY : src/console.cpp.i
-
-src/console.s: src/console.cpp.s
-.PHONY : src/console.s
-
-# target to generate assembly for a file
-src/console.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/console.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/console.cpp.s
-.PHONY : src/console.cpp.s
-
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
-
-# target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/main_console.obj: src/main_console.cpp.obj
-.PHONY : src/main_console.obj
-
-# target to build an object file
-src/main_console.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/main_console.cpp.obj
-.PHONY : src/main_console.cpp.obj
-
-src/main_console.i: src/main_console.cpp.i
-.PHONY : src/main_console.i
-
-# target to preprocess a source file
-src/main_console.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/main_console.cpp.i
-.PHONY : src/main_console.cpp.i
-
-src/main_console.s: src/main_console.cpp.s
-.PHONY : src/main_console.s
-
-# target to generate assembly for a file
-src/main_console.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/main_console.cpp.s
-.PHONY : src/main_console.cpp.s
-
-src/mainwindow.obj: src/mainwindow.cpp.obj
-.PHONY : src/mainwindow.obj
-
-# target to build an object file
-src/mainwindow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.obj
-.PHONY : src/mainwindow.cpp.obj
-
-src/mainwindow.i: src/mainwindow.cpp.i
-.PHONY : src/mainwindow.i
-
-# target to preprocess a source file
-src/mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.i
-.PHONY : src/mainwindow.cpp.i
-
-src/mainwindow.s: src/mainwindow.cpp.s
-.PHONY : src/mainwindow.s
-
-# target to generate assembly for a file
-src/mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/mainwindow.cpp.s
-.PHONY : src/mainwindow.cpp.s
-
-src/product.obj: src/product.cpp.obj
-.PHONY : src/product.obj
-
-# target to build an object file
-src/product.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/product.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/product.cpp.obj
-.PHONY : src/product.cpp.obj
-
-src/product.i: src/product.cpp.i
-.PHONY : src/product.i
-
-# target to preprocess a source file
-src/product.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/product.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/product.cpp.i
-.PHONY : src/product.cpp.i
-
-src/product.s: src/product.cpp.s
-.PHONY : src/product.s
-
-# target to generate assembly for a file
-src/product.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/product.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/product.cpp.s
-.PHONY : src/product.cpp.s
-
-src/store.obj: src/store.cpp.obj
-.PHONY : src/store.obj
-
-# target to build an object file
-src/store.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/store.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/store.cpp.obj
-.PHONY : src/store.cpp.obj
-
-src/store.i: src/store.cpp.i
-.PHONY : src/store.i
-
-# target to preprocess a source file
-src/store.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/store.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/store.cpp.i
-.PHONY : src/store.cpp.i
-
-src/store.s: src/store.cpp.s
-.PHONY : src/store.s
-
-# target to generate assembly for a file
-src/store.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/store.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/store.cpp.s
-.PHONY : src/store.cpp.s
-
-src/utils.obj: src/utils.cpp.obj
-.PHONY : src/utils.obj
-
-# target to build an object file
-src/utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/utils.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/utils.cpp.obj
-.PHONY : src/utils.cpp.obj
-
-src/utils.i: src/utils.cpp.i
-.PHONY : src/utils.i
-
-# target to preprocess a source file
-src/utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/utils.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/utils.cpp.i
-.PHONY : src/utils.cpp.i
-
-src/utils.s: src/utils.cpp.s
-.PHONY : src/utils.s
-
-# target to generate assembly for a file
-src/utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/src/utils.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/src/utils.cpp.s
-.PHONY : src/utils.cpp.s
-
-tienda_belleza_autogen/mocs_compilation.obj: tienda_belleza_autogen/mocs_compilation.cpp.obj
-.PHONY : tienda_belleza_autogen/mocs_compilation.obj
-
-# target to build an object file
-tienda_belleza_autogen/mocs_compilation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.obj
-.PHONY : tienda_belleza_autogen/mocs_compilation.cpp.obj
-
-tienda_belleza_autogen/mocs_compilation.i: tienda_belleza_autogen/mocs_compilation.cpp.i
-.PHONY : tienda_belleza_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-tienda_belleza_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.i
-.PHONY : tienda_belleza_autogen/mocs_compilation.cpp.i
-
-tienda_belleza_autogen/mocs_compilation.s: tienda_belleza_autogen/mocs_compilation.cpp.s
-.PHONY : tienda_belleza_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-tienda_belleza_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza.dir\build.make CMakeFiles/tienda_belleza.dir/tienda_belleza_autogen/mocs_compilation.cpp.s
-.PHONY : tienda_belleza_autogen/mocs_compilation.cpp.s
-
-tienda_belleza_console_autogen/mocs_compilation.obj: tienda_belleza_console_autogen/mocs_compilation.cpp.obj
-.PHONY : tienda_belleza_console_autogen/mocs_compilation.obj
-
-# target to build an object file
-tienda_belleza_console_autogen/mocs_compilation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/tienda_belleza_console_autogen/mocs_compilation.cpp.obj
-.PHONY : tienda_belleza_console_autogen/mocs_compilation.cpp.obj
-
-tienda_belleza_console_autogen/mocs_compilation.i: tienda_belleza_console_autogen/mocs_compilation.cpp.i
-.PHONY : tienda_belleza_console_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-tienda_belleza_console_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/tienda_belleza_console_autogen/mocs_compilation.cpp.i
-.PHONY : tienda_belleza_console_autogen/mocs_compilation.cpp.i
-
-tienda_belleza_console_autogen/mocs_compilation.s: tienda_belleza_console_autogen/mocs_compilation.cpp.s
-.PHONY : tienda_belleza_console_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-tienda_belleza_console_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tienda_belleza_console.dir\build.make CMakeFiles/tienda_belleza_console.dir/tienda_belleza_console_autogen/mocs_compilation.cpp.s
-.PHONY : tienda_belleza_console_autogen/mocs_compilation.cpp.s
+tienda_tui/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/build
+.PHONY : tienda_tui/fast
 
 # Help Target
 help:
@@ -473,44 +187,12 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... tienda_belleza_autogen
-	@echo ... tienda_belleza_autogen_timestamp_deps
-	@echo ... tienda_belleza_console_autogen
-	@echo ... tienda_belleza_console_autogen_timestamp_deps
-	@echo ... tienda_belleza
-	@echo ... tienda_belleza_console
-	@echo ... src/console.obj
-	@echo ... src/console.i
-	@echo ... src/console.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
-	@echo ... src/main_console.obj
-	@echo ... src/main_console.i
-	@echo ... src/main_console.s
-	@echo ... src/mainwindow.obj
-	@echo ... src/mainwindow.i
-	@echo ... src/mainwindow.s
-	@echo ... src/product.obj
-	@echo ... src/product.i
-	@echo ... src/product.s
-	@echo ... src/store.obj
-	@echo ... src/store.i
-	@echo ... src/store.s
-	@echo ... src/utils.obj
-	@echo ... src/utils.i
-	@echo ... src/utils.s
-	@echo ... tienda_belleza_autogen/mocs_compilation.obj
-	@echo ... tienda_belleza_autogen/mocs_compilation.i
-	@echo ... tienda_belleza_autogen/mocs_compilation.s
-	@echo ... tienda_belleza_console_autogen/mocs_compilation.obj
-	@echo ... tienda_belleza_console_autogen/mocs_compilation.i
-	@echo ... tienda_belleza_console_autogen/mocs_compilation.s
+	@echo ... managers
+	@echo ... modelos
+	@echo ... persistencia
+	@echo ... tienda_consola
+	@echo ... tienda_tui
 .PHONY : help
 
 

@@ -1,0 +1,2 @@
+C:\Qt\Tools\mingw1120_64\bin\ar.exe qc libpersistencia.a CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj
+C:\Qt\Tools\mingw1120_64\bin\ranlib.exe libpersistencia.a
