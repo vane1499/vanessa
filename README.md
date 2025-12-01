@@ -42,6 +42,7 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
      ```powershell
      dir "C:\Qt\6.5.3\mingw_64\bin\uic.exe"
      dir "C:\Qt\Tools\mingw1120_64\bin\g++.exe"
+     
      ```
 
 4. **MinGW (si no lo instalaste junto a Qt)**
