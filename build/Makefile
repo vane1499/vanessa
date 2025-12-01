@@ -310,6 +310,45 @@ tienda_tui_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen.dir\build.make src/CMakeFiles/tienda_tui_autogen.dir/build
 .PHONY : tienda_tui_autogen/fast
 
+#=============================================================================
+# Target rules for targets named tienda_desktop
+
+# Build rule for target.
+tienda_desktop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_desktop
+.PHONY : tienda_desktop
+
+# fast build rule for target.
+tienda_desktop/fast:
+	$(MAKE) $(MAKESILENT) -f desktop\CMakeFiles\tienda_desktop.dir\build.make desktop/CMakeFiles/tienda_desktop.dir/build
+.PHONY : tienda_desktop/fast
+
+#=============================================================================
+# Target rules for targets named tienda_desktop_autogen_timestamp_deps
+
+# Build rule for target.
+tienda_desktop_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_desktop_autogen_timestamp_deps
+.PHONY : tienda_desktop_autogen_timestamp_deps
+
+# fast build rule for target.
+tienda_desktop_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f desktop\CMakeFiles\tienda_desktop_autogen_timestamp_deps.dir\build.make desktop/CMakeFiles/tienda_desktop_autogen_timestamp_deps.dir/build
+.PHONY : tienda_desktop_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named tienda_desktop_autogen
+
+# Build rule for target.
+tienda_desktop_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_desktop_autogen
+.PHONY : tienda_desktop_autogen
+
+# fast build rule for target.
+tienda_desktop_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f desktop\CMakeFiles\tienda_desktop_autogen.dir\build.make desktop/CMakeFiles/tienda_desktop_autogen.dir/build
+.PHONY : tienda_desktop_autogen/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -326,12 +365,15 @@ help:
 	@echo ... persistencia_autogen_timestamp_deps
 	@echo ... tienda_consola_autogen
 	@echo ... tienda_consola_autogen_timestamp_deps
+	@echo ... tienda_desktop_autogen
+	@echo ... tienda_desktop_autogen_timestamp_deps
 	@echo ... tienda_tui_autogen
 	@echo ... tienda_tui_autogen_timestamp_deps
 	@echo ... managers
 	@echo ... modelos
 	@echo ... persistencia
 	@echo ... tienda_consola
+	@echo ... tienda_desktop
 	@echo ... tienda_tui
 .PHONY : help
 

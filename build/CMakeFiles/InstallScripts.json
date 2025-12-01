@@ -2,7 +2,8 @@
 	"InstallScripts" : 
 	[
 		"C:/Users/Equipo/vanessa/build/cmake_install.cmake",
-		"C:/Users/Equipo/vanessa/build/src/cmake_install.cmake"
+		"C:/Users/Equipo/vanessa/build/src/cmake_install.cmake",
+		"C:/Users/Equipo/vanessa/build/desktop/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

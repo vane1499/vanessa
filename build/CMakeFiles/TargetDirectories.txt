@@ -17,3 +17,8 @@ C:/Users/Equipo/vanessa/build/src/CMakeFiles/tienda_consola_autogen_timestamp_de
 C:/Users/Equipo/vanessa/build/src/CMakeFiles/tienda_consola_autogen.dir
 C:/Users/Equipo/vanessa/build/src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir
 C:/Users/Equipo/vanessa/build/src/CMakeFiles/tienda_tui_autogen.dir
+C:/Users/Equipo/vanessa/build/desktop/CMakeFiles/tienda_desktop.dir
+C:/Users/Equipo/vanessa/build/desktop/CMakeFiles/edit_cache.dir
+C:/Users/Equipo/vanessa/build/desktop/CMakeFiles/rebuild_cache.dir
+C:/Users/Equipo/vanessa/build/desktop/CMakeFiles/tienda_desktop_autogen_timestamp_deps.dir
+C:/Users/Equipo/vanessa/build/desktop/CMakeFiles/tienda_desktop_autogen.dir

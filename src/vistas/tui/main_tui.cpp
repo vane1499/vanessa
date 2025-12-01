@@ -15,7 +15,7 @@ static void mostrarEncabezado() {
 int main() {
     std::filesystem::create_directories("data");
 
-    auto repo = std::make_shared<PersistSQLite>(QStringLiteral("data/tienda.db"));
+    auto repo = std::make_shared<PersistSQLite>("data/tienda.db");
     ProductoManager mgr(repo);
     if (!mgr.init()) {
         // si falla inicializar la BD mostramos mensaje sin curses
@@ -32,7 +32,7 @@ int main() {
 
 int main_tui() {
     std::filesystem::create_directories("data");
-    auto repo = std::make_shared<PersistSQLite>(QStringLiteral("data/tienda.db"));
+    auto repo = std::make_shared<PersistSQLite>("data/tienda.db");
     ProductoManager mgr(repo);
     if (!mgr.init()) {
         std::cerr << "Error inicializando DB\n";

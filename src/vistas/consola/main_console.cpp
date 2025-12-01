@@ -17,7 +17,7 @@ int pedirEntero(const string& mensaje) {
         cout << mensaje;
         if (cin >> valor) break;
 
-        cout << "❌ Entrada inválida. Debe ingresar un número.\n";
+        cout << " Entrada invalida. Debe ingresar un numero.\n";
         limpiarBuffer();
     }
     limpiarBuffer();
@@ -30,7 +30,7 @@ double pedirDouble(const string& mensaje) {
         cout << mensaje;
         if (cin >> valor) break;
 
-        cout << "❌ Entrada inválida. Debe ingresar un número.\n";
+        cout << " Entrada invalida. Debe ingresar un numero.\n";
         limpiarBuffer();
     }
     limpiarBuffer();
@@ -45,7 +45,7 @@ string pedirString(const string& mensaje) {
 }
 
 void mostrarProductos(const vector<Producto>& lista) {
-    cout << "\n📦 LISTA DE PRODUCTOS\n";
+    cout << "\n LISTA DE PRODUCTOS\n";
     for (const auto& p : lista) {
         cout << "---------------------------------------\n";
         cout << "ID:     " << p.id << "\n";
@@ -61,7 +61,7 @@ int main() {
     ProductoManager manager(repo);
 
     if (!manager.init()) {
-        cout << "❌ Error al inicializar la base de datos.\n";
+        cout << " Error al inicializar la base de datos.\n";
         return 1;
     }
 
@@ -73,7 +73,7 @@ int main() {
 3. Editar producto
 4. Eliminar producto
 5. Salir
-Opción: )";
+Opcion: )";
 
         int opcion = pedirEntero("");
 
@@ -88,7 +88,7 @@ Opción: )";
             if (manager.insertar(p))
                 cout << "✔ Producto agregado.\n";
             else
-                cout << "❌ No se pudo agregar.\n";
+                cout << " No se pudo agregar.\n";
             break;
         }
 
@@ -103,11 +103,11 @@ Opción: )";
                 if (p.id == id) { encontrado = p; existe = true; }
 
             if (!existe) {
-                cout << "❌ No existe ese ID.\n";
+                cout << " No existe ese ID.\n";
                 break;
             }
 
-            cout << "\n--- Deja vacío para no modificar ---\n";
+            cout << "\n--- Deja vacio para no modificar ---\n";
 
             string nombre = pedirString("Nuevo nombre (" + encontrado.nombre + "): ");
             string precioS = pedirString("Nuevo precio (" + to_string(encontrado.precio) + "): ");
@@ -120,7 +120,7 @@ Opción: )";
             if (manager.actualizar(encontrado))
                 cout << "✔ Producto actualizado.\n";
             else
-                cout << "❌ No se pudo actualizar.\n";
+                cout << " No se pudo actualizar.\n";
 
             break;
         }
@@ -130,7 +130,7 @@ Opción: )";
             if (manager.eliminar(id))
                 cout << "✔ Eliminado.\n";
             else
-                cout << "❌ No se pudo eliminar.\n";
+                cout << " No se pudo eliminar.\n";
             break;
         }
 
@@ -145,7 +145,7 @@ Opción: )";
             return 0;
 
         default:
-            cout << "❌ Opción inválida.\n";
+            cout << " Opción invalida.\n";
         }
     }
 }

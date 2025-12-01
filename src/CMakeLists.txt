@@ -55,10 +55,22 @@ target_include_directories(tienda_consola PRIVATE
 )
 target_link_libraries(tienda_consola PRIVATE managers persistencia modelos Qt6::Core Qt6::Sql)
 
-# -------------------------
+# -------------------------====================================================
 # CURSES / PDCURSES
 # -------------------------
 find_package(Curses REQUIRED)
+if (WIN32)
+    message(STATUS "Using PDCurses (Windows)")
+
+    set(CURSES_INCLUDE_PATH "C:/pdcurses")
+    set(CURSES_LIBRARY "C:/pdcurses/wincon/pdcurses.a")   # ESTA ES TU RUTA REAL
+
+    include_directories(${CURSES_INCLUDE_PATH})
+else()
+    find_package(Curses REQUIRED)
+endif()
+
+
 if (Curses_FOUND)
     message(STATUS "Found Curses: includes=${CURSES_INCLUDE_DIR} libs=${CURSES_LIBRARIES}")
 endif()

@@ -1,4 +1,6 @@
 # Hashes of file build rules.
+d88cdf6f963a90c1bdadc22e6efbfd56 desktop/CMakeFiles/tienda_desktop_autogen
+2bff656510541e34b7db0236fd1eb91c desktop/tienda_desktop_autogen/timestamp
 efa3dda92e44be188459f6e54e97aeb4 src/CMakeFiles/managers_autogen
 efa3dda92e44be188459f6e54e97aeb4 src/CMakeFiles/modelos_autogen
 efa3dda92e44be188459f6e54e97aeb4 src/CMakeFiles/persistencia_autogen

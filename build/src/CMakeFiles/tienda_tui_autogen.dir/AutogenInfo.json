@@ -54,9 +54,9 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"C:/pdcurses",
 		"C:/Users/Equipo/vanessa/src",
 		"C:/Users/Equipo/vanessa/src/vistas/tui",
-		"C:/pdcurses",
 		"C:/pdcurses/include",
 		"C:/Users/Equipo/vanessa/src/managers",
 		"C:/Users/Equipo/vanessa/src/persistencia",
