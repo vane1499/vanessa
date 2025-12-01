@@ -64,37 +64,40 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
    cd vanessa
    ```
 
-2. Genera la carpeta de compilación:
+2. Entrar a la carpeta de compilación:
 
    ```powershell
-   cmake -S FRONTEND -B build -G "MinGW Makefiles"
+   cd build
    ```
 
-3. Compila:
+3. Preparacion:
 
    ```powershell
-   cmake --build build
+   cmake .. -G "MinGW Makefiles" ^
+ -DCURSES_LIBRARY="C:/pdcurses/wincon/pdcurses.a" ^
+ -DCURSES_INCLUDE_PATH="C:/pdcurses"
    ```
-
-4. Ejecuta:
+4. Cargando para que no haya fallos:
 
    ```powershell
-   .\build\tienda_belleza.exe
+   mingw32-make
    ```
+5. Si todo salio bien, entrar a la carpeta "src" para poder correr desde algun artefacto a escoger
+- Para correr la consola:
+ ```powershell
+   tienda_consola.exe
+ ```
+ - Para correr la TUI:
+ ```powershell
+   tienda_tui.exe
+ ```
+ - Para correr Desktop:
+ ```powershell
 
----
+ ```
+ ---
 
-## 💻 Modo de ejecución
 
-PARA CORRER EL DESKTO
-  ```powershell
-  .\build\tienda_belleza.exe
-  ```
-PARA CORRER LA CONSOLA
-  ```powershell
-  .\build\tienda_belleza_console.exe
-  ```
----
 
 ##  Resumen de verificaciones
 
@@ -110,3 +113,19 @@ dir "C:\Qt\6.5.3\mingw_64\bin\uic.exe"
 Si todos responden sin error, ya puedes compilar el proyecto 🚀
 
 ---
+
+comandos para REINICIAR todos los registros o productos guardados en el proyecto
+
+```powershell
+rmdir /s /q build
+mkdir build
+cd build
+
+cmake .. -G "MinGW Makefiles" ^
+ -DCURSES_LIBRARY="C:/pdcurses/wincon/pdcurses.a" ^
+ -DCURSES_INCLUDE_PATH="C:/pdcurses"
+
+mingw32-make
+```
+se reinicia los registros de los productos por que se elimina la carpeta "build", que es donde se esta "data/tienda.db"
+{se reinicia la carpeta build cuando se modifica algun CMakeLists.txt}
