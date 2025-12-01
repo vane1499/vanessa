@@ -87,16 +87,17 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
 5. Si todo salio bien, entrar a la carpeta "src" para poder correr desde algun artefacto a escoger
 - Para correr la consola:
  ```powershell
+   cd vanessa\build\src
    tienda_consola.exe
  ```
  - Para correr la TUI:
  ```powershell
+   cd vanessa\build\src
    tienda_tui.exe
  ```
  - Para correr Desktop se tiene que entrar a desktop(es fuera de src):
  ```powershell
-  cd ..
-  cd desktop
+  cd vanessa\build\desktop
   tienda_desktop.exe
  ```
  
