@@ -1,0 +1,95 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "C:/Users/Equipo/vanessa/build/src/modelos_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Equipo/vanessa/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Equipo/vanessa/build/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Equipo/vanessa/src",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"C:/Users/Equipo/vanessa/src/CMakeLists.txt",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindCurses.cmake",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindPkgConfig.cmake",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "C:/Users/Equipo/vanessa",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "C:/Users/Equipo/vanessa/build/src/modelos_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "modelos_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/Equipo/vanessa/src/modelos/producto.h",
+			"MU",
+			"COAPWPKEHJ/moc_producto.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "C:/Users/Equipo/vanessa/build/src/modelos_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/Equipo/vanessa/build/src/modelos_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"C:/Users/Equipo/vanessa/src",
+		"C:/Users/Equipo/vanessa/src/modelos",
+		"C:/pdcurses",
+		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
+		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+		"C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+		"C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"C:/Qt/Tools/mingw1120_64/bin/c++.exe",
+		"-std=gnu++17",
+		"-w",
+		"-dM",
+		"-E",
+		"C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "C:/Users/Equipo/vanessa/build/src/modelos_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 2,
+	"PARSE_CACHE_FILE" : "C:/Users/Equipo/vanessa/build/src/CMakeFiles/modelos_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/6.5.3/mingw_64/./bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Qt/6.5.3/mingw_64/./bin/uic.exe",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 5,
+	"SETTINGS_FILE" : "C:/Users/Equipo/vanessa/build/src/CMakeFiles/modelos_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "C:/Users/Equipo/vanessa/src/modelos/producto.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

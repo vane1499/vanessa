@@ -1,1 +1,1 @@
--IC:/Users/Equipo/vanessa/src -IC:/Users/Equipo/vanessa/src/modelos -IC:/pdcurses
+-IC:/Users/Equipo/vanessa/build/src/modelos_autogen/include -IC:/Users/Equipo/vanessa/src -IC:/Users/Equipo/vanessa/src/modelos -IC:/pdcurses

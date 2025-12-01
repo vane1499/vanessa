@@ -68,14 +68,36 @@ include src/CMakeFiles/tienda_tui.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/tienda_tui.dir/flags.make
 
+src/tienda_tui_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/moc.exe
+src/tienda_tui_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/uic.exe
+src/tienda_tui_autogen/timestamp: src/CMakeFiles/tienda_tui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target tienda_tui"
+	cd /d C:\Users\Equipo\vanessa\build\src && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Equipo/vanessa/build/src/CMakeFiles/tienda_tui_autogen.dir/AutogenInfo.json ""
+	cd /d C:\Users\Equipo\vanessa\build\src && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Equipo/vanessa/build/src/tienda_tui_autogen/timestamp
+
 src/CMakeFiles/tienda_tui.dir/codegen:
 .PHONY : src/CMakeFiles/tienda_tui.dir/codegen
+
+src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/tienda_tui.dir/flags.make
+src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/tienda_tui.dir/includes_CXX.rsp
+src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj: src/tienda_tui_autogen/mocs_compilation.cpp
+src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/tienda_tui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\tienda_tui.dir\tienda_tui_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\tienda_tui.dir\tienda_tui_autogen\mocs_compilation.cpp.obj -c C:\Users\Equipo\vanessa\build\src\tienda_tui_autogen\mocs_compilation.cpp
+
+src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.i"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\build\src\tienda_tui_autogen\mocs_compilation.cpp > CMakeFiles\tienda_tui.dir\tienda_tui_autogen\mocs_compilation.cpp.i
+
+src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.s"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\build\src\tienda_tui_autogen\mocs_compilation.cpp -o CMakeFiles\tienda_tui.dir\tienda_tui_autogen\mocs_compilation.cpp.s
 
 src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj: src/CMakeFiles/tienda_tui.dir/flags.make
 src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj: src/CMakeFiles/tienda_tui.dir/includes_CXX.rsp
 src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj: C:/Users/Equipo/vanessa/src/vistas/tui/main_tui.cpp
 src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj: src/CMakeFiles/tienda_tui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj"
 	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj -MF CMakeFiles\tienda_tui.dir\vistas\tui\main_tui.cpp.obj.d -o CMakeFiles\tienda_tui.dir\vistas\tui\main_tui.cpp.obj -c C:\Users\Equipo\vanessa\src\vistas\tui\main_tui.cpp
 
 src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.i: cmake_force
@@ -90,7 +112,7 @@ src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj: src/CMakeFiles/tien
 src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj: src/CMakeFiles/tienda_tui.dir/includes_CXX.rsp
 src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj: C:/Users/Equipo/vanessa/src/vistas/tui/tui_curses.cpp
 src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj: src/CMakeFiles/tienda_tui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj"
 	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj -MF CMakeFiles\tienda_tui.dir\vistas\tui\tui_curses.cpp.obj.d -o CMakeFiles\tienda_tui.dir\vistas\tui\tui_curses.cpp.obj -c C:\Users\Equipo\vanessa\src\vistas\tui\tui_curses.cpp
 
 src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.i: cmake_force
@@ -103,12 +125,14 @@ src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.s: cmake_force
 
 # Object files for target tienda_tui
 tienda_tui_OBJECTS = \
+"CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj" \
 "CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj"
 
 # External object files for target tienda_tui
 tienda_tui_EXTERNAL_OBJECTS =
 
+src/tienda_tui.exe: src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj
 src/tienda_tui.exe: src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj
 src/tienda_tui.exe: src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj
 src/tienda_tui.exe: src/CMakeFiles/tienda_tui.dir/build.make
@@ -122,7 +146,7 @@ src/tienda_tui.exe: C:/Qt/6.5.3/mingw_64/lib/libQt6Core.a
 src/tienda_tui.exe: src/CMakeFiles/tienda_tui.dir/linkLibs.rsp
 src/tienda_tui.exe: src/CMakeFiles/tienda_tui.dir/objects1.rsp
 src/tienda_tui.exe: src/CMakeFiles/tienda_tui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tienda_tui.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tienda_tui.exe"
 	cd /d C:\Users\Equipo\vanessa\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tienda_tui.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -133,7 +157,7 @@ src/CMakeFiles/tienda_tui.dir/clean:
 	cd /d C:\Users\Equipo\vanessa\build\src && $(CMAKE_COMMAND) -P CMakeFiles\tienda_tui.dir\cmake_clean.cmake
 .PHONY : src/CMakeFiles/tienda_tui.dir/clean
 
-src/CMakeFiles/tienda_tui.dir/depend:
+src/CMakeFiles/tienda_tui.dir/depend: src/tienda_tui_autogen/timestamp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Equipo\vanessa C:\Users\Equipo\vanessa\src C:\Users\Equipo\vanessa\build C:\Users\Equipo\vanessa\build\src C:\Users\Equipo\vanessa\build\src\CMakeFiles\tienda_tui.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/tienda_tui.dir/depend
 

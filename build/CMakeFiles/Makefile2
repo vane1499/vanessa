@@ -106,21 +106,32 @@ src/clean: src/CMakeFiles/persistencia.dir/clean
 src/clean: src/CMakeFiles/managers.dir/clean
 src/clean: src/CMakeFiles/tienda_consola.dir/clean
 src/clean: src/CMakeFiles/tienda_tui.dir/clean
+src/clean: src/CMakeFiles/modelos_autogen_timestamp_deps.dir/clean
+src/clean: src/CMakeFiles/modelos_autogen.dir/clean
+src/clean: src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/clean
+src/clean: src/CMakeFiles/persistencia_autogen.dir/clean
+src/clean: src/CMakeFiles/managers_autogen_timestamp_deps.dir/clean
+src/clean: src/CMakeFiles/managers_autogen.dir/clean
+src/clean: src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/clean
+src/clean: src/CMakeFiles/tienda_consola_autogen.dir/clean
+src/clean: src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/clean
+src/clean: src/CMakeFiles/tienda_tui_autogen.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/modelos.dir
 
 # All Build rule for target.
-src/CMakeFiles/modelos.dir/all:
+src/CMakeFiles/modelos.dir/all: src/CMakeFiles/modelos_autogen.dir/all
+src/CMakeFiles/modelos.dir/all: src/CMakeFiles/modelos_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos.dir\build.make src/CMakeFiles/modelos.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos.dir\build.make src/CMakeFiles/modelos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=3,4 "Built target modelos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=6,7,8,9 "Built target modelos"
 .PHONY : src/CMakeFiles/modelos.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/modelos.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/modelos.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
 .PHONY : src/CMakeFiles/modelos.dir/rule
@@ -130,9 +141,9 @@ modelos: src/CMakeFiles/modelos.dir/rule
 .PHONY : modelos
 
 # codegen rule for target.
-src/CMakeFiles/modelos.dir/codegen:
+src/CMakeFiles/modelos.dir/codegen: src/CMakeFiles/modelos_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos.dir\build.make src/CMakeFiles/modelos.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=3,4 "Finished codegen for target modelos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=6,7,8,9 "Finished codegen for target modelos"
 .PHONY : src/CMakeFiles/modelos.dir/codegen
 
 # clean rule for target.
@@ -145,14 +156,16 @@ src/CMakeFiles/modelos.dir/clean:
 
 # All Build rule for target.
 src/CMakeFiles/persistencia.dir/all: src/CMakeFiles/modelos.dir/all
+src/CMakeFiles/persistencia.dir/all: src/CMakeFiles/persistencia_autogen.dir/all
+src/CMakeFiles/persistencia.dir/all: src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia.dir\build.make src/CMakeFiles/persistencia.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia.dir\build.make src/CMakeFiles/persistencia.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=5,6 "Built target persistencia"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=11,12,13,14 "Built target persistencia"
 .PHONY : src/CMakeFiles/persistencia.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/persistencia.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/persistencia.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
 .PHONY : src/CMakeFiles/persistencia.dir/rule
@@ -162,9 +175,9 @@ persistencia: src/CMakeFiles/persistencia.dir/rule
 .PHONY : persistencia
 
 # codegen rule for target.
-src/CMakeFiles/persistencia.dir/codegen:
+src/CMakeFiles/persistencia.dir/codegen: src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia.dir\build.make src/CMakeFiles/persistencia.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=5,6 "Finished codegen for target persistencia"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=11,12,13,14 "Finished codegen for target persistencia"
 .PHONY : src/CMakeFiles/persistencia.dir/codegen
 
 # clean rule for target.
@@ -176,16 +189,18 @@ src/CMakeFiles/persistencia.dir/clean:
 # Target rules for target src/CMakeFiles/managers.dir
 
 # All Build rule for target.
-src/CMakeFiles/managers.dir/all: src/CMakeFiles/persistencia.dir/all
 src/CMakeFiles/managers.dir/all: src/CMakeFiles/modelos.dir/all
+src/CMakeFiles/managers.dir/all: src/CMakeFiles/persistencia.dir/all
+src/CMakeFiles/managers.dir/all: src/CMakeFiles/managers_autogen.dir/all
+src/CMakeFiles/managers.dir/all: src/CMakeFiles/managers_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers.dir\build.make src/CMakeFiles/managers.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers.dir\build.make src/CMakeFiles/managers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=1,2 "Built target managers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=1,2,3,4 "Built target managers"
 .PHONY : src/CMakeFiles/managers.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/managers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/managers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
 .PHONY : src/CMakeFiles/managers.dir/rule
@@ -195,9 +210,9 @@ managers: src/CMakeFiles/managers.dir/rule
 .PHONY : managers
 
 # codegen rule for target.
-src/CMakeFiles/managers.dir/codegen:
+src/CMakeFiles/managers.dir/codegen: src/CMakeFiles/managers_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers.dir\build.make src/CMakeFiles/managers.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=1,2 "Finished codegen for target managers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target managers"
 .PHONY : src/CMakeFiles/managers.dir/codegen
 
 # clean rule for target.
@@ -209,17 +224,19 @@ src/CMakeFiles/managers.dir/clean:
 # Target rules for target src/CMakeFiles/tienda_consola.dir
 
 # All Build rule for target.
+src/CMakeFiles/tienda_consola.dir/all: src/CMakeFiles/modelos.dir/all
 src/CMakeFiles/tienda_consola.dir/all: src/CMakeFiles/persistencia.dir/all
 src/CMakeFiles/tienda_consola.dir/all: src/CMakeFiles/managers.dir/all
-src/CMakeFiles/tienda_consola.dir/all: src/CMakeFiles/modelos.dir/all
+src/CMakeFiles/tienda_consola.dir/all: src/CMakeFiles/tienda_consola_autogen.dir/all
+src/CMakeFiles/tienda_consola.dir/all: src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola.dir\build.make src/CMakeFiles/tienda_consola.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola.dir\build.make src/CMakeFiles/tienda_consola.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=7,8 "Built target tienda_consola"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=16,17,18,19 "Built target tienda_consola"
 .PHONY : src/CMakeFiles/tienda_consola.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/tienda_consola.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_consola.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
 .PHONY : src/CMakeFiles/tienda_consola.dir/rule
@@ -229,9 +246,9 @@ tienda_consola: src/CMakeFiles/tienda_consola.dir/rule
 .PHONY : tienda_consola
 
 # codegen rule for target.
-src/CMakeFiles/tienda_consola.dir/codegen:
+src/CMakeFiles/tienda_consola.dir/codegen: src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola.dir\build.make src/CMakeFiles/tienda_consola.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=7,8 "Finished codegen for target tienda_consola"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=16,17,18,19 "Finished codegen for target tienda_consola"
 .PHONY : src/CMakeFiles/tienda_consola.dir/codegen
 
 # clean rule for target.
@@ -243,17 +260,19 @@ src/CMakeFiles/tienda_consola.dir/clean:
 # Target rules for target src/CMakeFiles/tienda_tui.dir
 
 # All Build rule for target.
+src/CMakeFiles/tienda_tui.dir/all: src/CMakeFiles/modelos.dir/all
 src/CMakeFiles/tienda_tui.dir/all: src/CMakeFiles/persistencia.dir/all
 src/CMakeFiles/tienda_tui.dir/all: src/CMakeFiles/managers.dir/all
-src/CMakeFiles/tienda_tui.dir/all: src/CMakeFiles/modelos.dir/all
+src/CMakeFiles/tienda_tui.dir/all: src/CMakeFiles/tienda_tui_autogen.dir/all
+src/CMakeFiles/tienda_tui.dir/all: src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=9,10,11 "Built target tienda_tui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=21,22,23,24,25 "Built target tienda_tui"
 .PHONY : src/CMakeFiles/tienda_tui.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/tienda_tui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_tui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
 .PHONY : src/CMakeFiles/tienda_tui.dir/rule
@@ -263,15 +282,340 @@ tienda_tui: src/CMakeFiles/tienda_tui.dir/rule
 .PHONY : tienda_tui
 
 # codegen rule for target.
-src/CMakeFiles/tienda_tui.dir/codegen:
+src/CMakeFiles/tienda_tui.dir/codegen: src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=9,10,11 "Finished codegen for target tienda_tui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=21,22,23,24,25 "Finished codegen for target tienda_tui"
 .PHONY : src/CMakeFiles/tienda_tui.dir/codegen
 
 # clean rule for target.
 src/CMakeFiles/tienda_tui.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/clean
 .PHONY : src/CMakeFiles/tienda_tui.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/modelos_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+src/CMakeFiles/modelos_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen_timestamp_deps.dir\build.make src/CMakeFiles/modelos_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen_timestamp_deps.dir\build.make src/CMakeFiles/modelos_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Built target modelos_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/modelos_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/modelos_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/modelos_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/modelos_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+modelos_autogen_timestamp_deps: src/CMakeFiles/modelos_autogen_timestamp_deps.dir/rule
+.PHONY : modelos_autogen_timestamp_deps
+
+# codegen rule for target.
+src/CMakeFiles/modelos_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen_timestamp_deps.dir\build.make src/CMakeFiles/modelos_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Finished codegen for target modelos_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/modelos_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/modelos_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen_timestamp_deps.dir\build.make src/CMakeFiles/modelos_autogen_timestamp_deps.dir/clean
+.PHONY : src/CMakeFiles/modelos_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/modelos_autogen.dir
+
+# All Build rule for target.
+src/CMakeFiles/modelos_autogen.dir/all: src/CMakeFiles/modelos_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen.dir\build.make src/CMakeFiles/modelos_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen.dir\build.make src/CMakeFiles/modelos_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=10 "Built target modelos_autogen"
+.PHONY : src/CMakeFiles/modelos_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/modelos_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/modelos_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/modelos_autogen.dir/rule
+
+# Convenience name for target.
+modelos_autogen: src/CMakeFiles/modelos_autogen.dir/rule
+.PHONY : modelos_autogen
+
+# codegen rule for target.
+src/CMakeFiles/modelos_autogen.dir/codegen: src/CMakeFiles/modelos_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen.dir\build.make src/CMakeFiles/modelos_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=10 "Finished codegen for target modelos_autogen"
+.PHONY : src/CMakeFiles/modelos_autogen.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/modelos_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen.dir\build.make src/CMakeFiles/modelos_autogen.dir/clean
+.PHONY : src/CMakeFiles/modelos_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/persistencia_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/all: src/CMakeFiles/modelos.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen_timestamp_deps.dir\build.make src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen_timestamp_deps.dir\build.make src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Built target persistencia_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+persistencia_autogen_timestamp_deps: src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/rule
+.PHONY : persistencia_autogen_timestamp_deps
+
+# codegen rule for target.
+src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen_timestamp_deps.dir\build.make src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Finished codegen for target persistencia_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen_timestamp_deps.dir\build.make src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/clean
+.PHONY : src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/persistencia_autogen.dir
+
+# All Build rule for target.
+src/CMakeFiles/persistencia_autogen.dir/all: src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen.dir\build.make src/CMakeFiles/persistencia_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen.dir\build.make src/CMakeFiles/persistencia_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=15 "Built target persistencia_autogen"
+.PHONY : src/CMakeFiles/persistencia_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/persistencia_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/persistencia_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/persistencia_autogen.dir/rule
+
+# Convenience name for target.
+persistencia_autogen: src/CMakeFiles/persistencia_autogen.dir/rule
+.PHONY : persistencia_autogen
+
+# codegen rule for target.
+src/CMakeFiles/persistencia_autogen.dir/codegen: src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen.dir\build.make src/CMakeFiles/persistencia_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=15 "Finished codegen for target persistencia_autogen"
+.PHONY : src/CMakeFiles/persistencia_autogen.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/persistencia_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen.dir\build.make src/CMakeFiles/persistencia_autogen.dir/clean
+.PHONY : src/CMakeFiles/persistencia_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/managers_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+src/CMakeFiles/managers_autogen_timestamp_deps.dir/all: src/CMakeFiles/modelos.dir/all
+src/CMakeFiles/managers_autogen_timestamp_deps.dir/all: src/CMakeFiles/persistencia.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen_timestamp_deps.dir\build.make src/CMakeFiles/managers_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen_timestamp_deps.dir\build.make src/CMakeFiles/managers_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Built target managers_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/managers_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/managers_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/managers_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/managers_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+managers_autogen_timestamp_deps: src/CMakeFiles/managers_autogen_timestamp_deps.dir/rule
+.PHONY : managers_autogen_timestamp_deps
+
+# codegen rule for target.
+src/CMakeFiles/managers_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen_timestamp_deps.dir\build.make src/CMakeFiles/managers_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Finished codegen for target managers_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/managers_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/managers_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen_timestamp_deps.dir\build.make src/CMakeFiles/managers_autogen_timestamp_deps.dir/clean
+.PHONY : src/CMakeFiles/managers_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/managers_autogen.dir
+
+# All Build rule for target.
+src/CMakeFiles/managers_autogen.dir/all: src/CMakeFiles/managers_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen.dir\build.make src/CMakeFiles/managers_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen.dir\build.make src/CMakeFiles/managers_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=5 "Built target managers_autogen"
+.PHONY : src/CMakeFiles/managers_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/managers_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/managers_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/managers_autogen.dir/rule
+
+# Convenience name for target.
+managers_autogen: src/CMakeFiles/managers_autogen.dir/rule
+.PHONY : managers_autogen
+
+# codegen rule for target.
+src/CMakeFiles/managers_autogen.dir/codegen: src/CMakeFiles/managers_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen.dir\build.make src/CMakeFiles/managers_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=5 "Finished codegen for target managers_autogen"
+.PHONY : src/CMakeFiles/managers_autogen.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/managers_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen.dir\build.make src/CMakeFiles/managers_autogen.dir/clean
+.PHONY : src/CMakeFiles/managers_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all: src/CMakeFiles/modelos.dir/all
+src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all: src/CMakeFiles/persistencia.dir/all
+src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all: src/CMakeFiles/managers.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Built target tienda_consola_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+tienda_consola_autogen_timestamp_deps: src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/rule
+.PHONY : tienda_consola_autogen_timestamp_deps
+
+# codegen rule for target.
+src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Finished codegen for target tienda_consola_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/clean
+.PHONY : src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/tienda_consola_autogen.dir
+
+# All Build rule for target.
+src/CMakeFiles/tienda_consola_autogen.dir/all: src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen.dir\build.make src/CMakeFiles/tienda_consola_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen.dir\build.make src/CMakeFiles/tienda_consola_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=20 "Built target tienda_consola_autogen"
+.PHONY : src/CMakeFiles/tienda_consola_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/tienda_consola_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_consola_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/tienda_consola_autogen.dir/rule
+
+# Convenience name for target.
+tienda_consola_autogen: src/CMakeFiles/tienda_consola_autogen.dir/rule
+.PHONY : tienda_consola_autogen
+
+# codegen rule for target.
+src/CMakeFiles/tienda_consola_autogen.dir/codegen: src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen.dir\build.make src/CMakeFiles/tienda_consola_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=20 "Finished codegen for target tienda_consola_autogen"
+.PHONY : src/CMakeFiles/tienda_consola_autogen.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/tienda_consola_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen.dir\build.make src/CMakeFiles/tienda_consola_autogen.dir/clean
+.PHONY : src/CMakeFiles/tienda_consola_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all: src/CMakeFiles/modelos.dir/all
+src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all: src/CMakeFiles/persistencia.dir/all
+src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all: src/CMakeFiles/managers.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Built target tienda_tui_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+tienda_tui_autogen_timestamp_deps: src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/rule
+.PHONY : tienda_tui_autogen_timestamp_deps
+
+# codegen rule for target.
+src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num= "Finished codegen for target tienda_tui_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/clean
+.PHONY : src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/tienda_tui_autogen.dir
+
+# All Build rule for target.
+src/CMakeFiles/tienda_tui_autogen.dir/all: src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen.dir\build.make src/CMakeFiles/tienda_tui_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen.dir\build.make src/CMakeFiles/tienda_tui_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=26 "Built target tienda_tui_autogen"
+.PHONY : src/CMakeFiles/tienda_tui_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/tienda_tui_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_tui_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Equipo\vanessa\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/tienda_tui_autogen.dir/rule
+
+# Convenience name for target.
+tienda_tui_autogen: src/CMakeFiles/tienda_tui_autogen.dir/rule
+.PHONY : tienda_tui_autogen
+
+# codegen rule for target.
+src/CMakeFiles/tienda_tui_autogen.dir/codegen: src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen.dir\build.make src/CMakeFiles/tienda_tui_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=26 "Finished codegen for target tienda_tui_autogen"
+.PHONY : src/CMakeFiles/tienda_tui_autogen.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/tienda_tui_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen.dir\build.make src/CMakeFiles/tienda_tui_autogen.dir/clean
+.PHONY : src/CMakeFiles/tienda_tui_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "src/tienda_tui_autogen/timestamp" "custom" "src/tienda_tui_autogen/deps"
+  "C:/Users/Equipo/vanessa/build/src/tienda_tui_autogen/mocs_compilation.cpp" "src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj" "gcc" "src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj.d"
   "C:/Users/Equipo/vanessa/src/vistas/tui/main_tui.cpp" "src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj" "gcc" "src/CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj.d"
   "C:/Users/Equipo/vanessa/src/vistas/tui/tui_curses.cpp" "src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj" "gcc" "src/CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj.d"
   )

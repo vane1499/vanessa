@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "src/managers_autogen/timestamp" "custom" "src/managers_autogen/deps"
   "C:/Users/Equipo/vanessa/src/managers/producto_manager.cpp" "src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj" "gcc" "src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj.d"
+  "C:/Users/Equipo/vanessa/build/src/managers_autogen/mocs_compilation.cpp" "src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj" "gcc" "src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

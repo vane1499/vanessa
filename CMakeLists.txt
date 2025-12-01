@@ -4,6 +4,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Encuentra Qt (Core y Sql necesarios)
-find_package(Qt6 REQUIRED COMPONENTS Core Sql)
+find_package(Qt6 REQUIRED COMPONENTS Core Sql Widgets)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
 
 add_subdirectory(src)

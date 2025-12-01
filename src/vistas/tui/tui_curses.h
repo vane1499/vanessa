@@ -1,25 +1,31 @@
-#pragma once
-#include <vector>
-#include "../managers/producto_manager.h"
+#ifndef TUI_CURSES_H
+#define TUI_CURSES_H
+
+#include <string>
+#include "../../managers/producto_manager.h"
 
 class TuiCurses {
-public:
-    explicit TuiCurses(ProductoManager &mgr);
-    ~TuiCurses();
-
-    void run();
-
 private:
     ProductoManager &m_mgr;
 
-    void drawMain();
-    void listProducts();
+public:
+    TuiCurses(ProductoManager &mgr);
+
+    void run();
     void addProduct();
     void editProduct();
     void deleteProduct();
+    void listProducts();
 
-    // helpers
-    int promptNumber(const char *label, int minVal = INT_MIN, int maxVal = INT_MAX);
+    // === INPUTS ===
+    int promptNumber(const char *label);
+    int promptNumberAllowEmpty(const char *label, int defaultVal);
+
+    double promptDouble(const char *label);
+    double promptDoubleAllowEmpty(const char *label, double defaultVal);
+
     std::string promptString(const char *label);
-    double promptDouble(const char *label, double minVal = -1e300, double maxVal = 1e300);
+    std::string promptStringAllowEmpty(const char *label);
 };
+
+#endif

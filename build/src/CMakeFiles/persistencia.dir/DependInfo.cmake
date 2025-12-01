@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "src/persistencia_autogen/timestamp" "custom" "src/persistencia_autogen/deps"
   "C:/Users/Equipo/vanessa/src/persistencia/persist_sqlite.cpp" "src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj" "gcc" "src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj.d"
+  "C:/Users/Equipo/vanessa/build/src/persistencia_autogen/mocs_compilation.cpp" "src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj" "gcc" "src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

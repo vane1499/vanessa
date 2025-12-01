@@ -180,6 +180,136 @@ tienda_tui/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/build
 .PHONY : tienda_tui/fast
 
+#=============================================================================
+# Target rules for targets named modelos_autogen_timestamp_deps
+
+# Build rule for target.
+modelos_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 modelos_autogen_timestamp_deps
+.PHONY : modelos_autogen_timestamp_deps
+
+# fast build rule for target.
+modelos_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen_timestamp_deps.dir\build.make src/CMakeFiles/modelos_autogen_timestamp_deps.dir/build
+.PHONY : modelos_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named modelos_autogen
+
+# Build rule for target.
+modelos_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 modelos_autogen
+.PHONY : modelos_autogen
+
+# fast build rule for target.
+modelos_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen.dir\build.make src/CMakeFiles/modelos_autogen.dir/build
+.PHONY : modelos_autogen/fast
+
+#=============================================================================
+# Target rules for targets named persistencia_autogen_timestamp_deps
+
+# Build rule for target.
+persistencia_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 persistencia_autogen_timestamp_deps
+.PHONY : persistencia_autogen_timestamp_deps
+
+# fast build rule for target.
+persistencia_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen_timestamp_deps.dir\build.make src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/build
+.PHONY : persistencia_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named persistencia_autogen
+
+# Build rule for target.
+persistencia_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 persistencia_autogen
+.PHONY : persistencia_autogen
+
+# fast build rule for target.
+persistencia_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen.dir\build.make src/CMakeFiles/persistencia_autogen.dir/build
+.PHONY : persistencia_autogen/fast
+
+#=============================================================================
+# Target rules for targets named managers_autogen_timestamp_deps
+
+# Build rule for target.
+managers_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 managers_autogen_timestamp_deps
+.PHONY : managers_autogen_timestamp_deps
+
+# fast build rule for target.
+managers_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen_timestamp_deps.dir\build.make src/CMakeFiles/managers_autogen_timestamp_deps.dir/build
+.PHONY : managers_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named managers_autogen
+
+# Build rule for target.
+managers_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 managers_autogen
+.PHONY : managers_autogen
+
+# fast build rule for target.
+managers_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen.dir\build.make src/CMakeFiles/managers_autogen.dir/build
+.PHONY : managers_autogen/fast
+
+#=============================================================================
+# Target rules for targets named tienda_consola_autogen_timestamp_deps
+
+# Build rule for target.
+tienda_consola_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_consola_autogen_timestamp_deps
+.PHONY : tienda_consola_autogen_timestamp_deps
+
+# fast build rule for target.
+tienda_consola_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/build
+.PHONY : tienda_consola_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named tienda_consola_autogen
+
+# Build rule for target.
+tienda_consola_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_consola_autogen
+.PHONY : tienda_consola_autogen
+
+# fast build rule for target.
+tienda_consola_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen.dir\build.make src/CMakeFiles/tienda_consola_autogen.dir/build
+.PHONY : tienda_consola_autogen/fast
+
+#=============================================================================
+# Target rules for targets named tienda_tui_autogen_timestamp_deps
+
+# Build rule for target.
+tienda_tui_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_tui_autogen_timestamp_deps
+.PHONY : tienda_tui_autogen_timestamp_deps
+
+# fast build rule for target.
+tienda_tui_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/build
+.PHONY : tienda_tui_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named tienda_tui_autogen
+
+# Build rule for target.
+tienda_tui_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tienda_tui_autogen
+.PHONY : tienda_tui_autogen
+
+# fast build rule for target.
+tienda_tui_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen.dir\build.make src/CMakeFiles/tienda_tui_autogen.dir/build
+.PHONY : tienda_tui_autogen/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -188,6 +318,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... managers_autogen
+	@echo ... managers_autogen_timestamp_deps
+	@echo ... modelos_autogen
+	@echo ... modelos_autogen_timestamp_deps
+	@echo ... persistencia_autogen
+	@echo ... persistencia_autogen_timestamp_deps
+	@echo ... tienda_consola_autogen
+	@echo ... tienda_consola_autogen_timestamp_deps
+	@echo ... tienda_tui_autogen
+	@echo ... tienda_tui_autogen_timestamp_deps
 	@echo ... managers
 	@echo ... modelos
 	@echo ... persistencia

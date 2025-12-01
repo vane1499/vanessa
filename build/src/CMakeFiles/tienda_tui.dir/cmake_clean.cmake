@@ -1,4 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tienda_tui_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/tienda_tui_autogen.dir/ParseCache.txt"
+  "tienda_tui_autogen"
+  "CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj"
   "CMakeFiles/tienda_tui.dir/vistas/tui/main_tui.cpp.obj.d"
   "CMakeFiles/tienda_tui.dir/vistas/tui/tui_curses.cpp.obj"
@@ -7,6 +12,8 @@ file(REMOVE_RECURSE
   "tienda_tui.exe"
   "tienda_tui.exe.manifest"
   "tienda_tui.pdb"
+  "tienda_tui_autogen/mocs_compilation.cpp"
+  "tienda_tui_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,6 +4,7 @@
 #include "../managers/producto_manager.h"
 #include "../persistencia/persist_sqlite.h"
 #include "tui_curses.h"
+#include <filesystem>
 
 static void mostrarEncabezado() {
     std::cout << "+--------------------------------+\n";
@@ -12,7 +13,9 @@ static void mostrarEncabezado() {
 }
 
 int main() {
-    auto repo = std::make_shared<PersistSQLite>(QStringLiteral("database.db"));
+    std::filesystem::create_directories("data");
+
+    auto repo = std::make_shared<PersistSQLite>(QStringLiteral("data/tienda.db"));
     ProductoManager mgr(repo);
     if (!mgr.init()) {
         // si falla inicializar la BD mostramos mensaje sin curses
@@ -28,7 +31,8 @@ int main() {
 }
 
 int main_tui() {
-    auto repo = std::make_shared<PersistSQLite>(QStringLiteral("database.db"));
+    std::filesystem::create_directories("data");
+    auto repo = std::make_shared<PersistSQLite>(QStringLiteral("data/tienda.db"));
     ProductoManager mgr(repo);
     if (!mgr.init()) {
         std::cerr << "Error inicializando DB\n";

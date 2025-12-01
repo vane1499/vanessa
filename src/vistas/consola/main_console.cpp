@@ -1,50 +1,151 @@
 #include <iostream>
 #include <memory>
-#include "../managers/producto_manager.h"
-#include "../persistencia/persist_sqlite.h"
+#include <limits>
+#include "producto_manager.h"
+#include "persist_sqlite.h"
+
+using namespace std;
+
+void limpiarBuffer() {
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}
+
+int pedirEntero(const string& mensaje) {
+    int valor;
+    while (true) {
+        cout << mensaje;
+        if (cin >> valor) break;
+
+        cout << "❌ Entrada inválida. Debe ingresar un número.\n";
+        limpiarBuffer();
+    }
+    limpiarBuffer();
+    return valor;
+}
+
+double pedirDouble(const string& mensaje) {
+    double valor;
+    while (true) {
+        cout << mensaje;
+        if (cin >> valor) break;
+
+        cout << "❌ Entrada inválida. Debe ingresar un número.\n";
+        limpiarBuffer();
+    }
+    limpiarBuffer();
+    return valor;
+}
+
+string pedirString(const string& mensaje) {
+    string s;
+    cout << mensaje;
+    getline(cin, s);
+    return s;
+}
+
+void mostrarProductos(const vector<Producto>& lista) {
+    cout << "\n📦 LISTA DE PRODUCTOS\n";
+    for (const auto& p : lista) {
+        cout << "---------------------------------------\n";
+        cout << "ID:     " << p.id << "\n";
+        cout << "Nombre: " << p.nombre << "\n";
+        cout << "Precio: " << p.precio << "\n";
+        cout << "Stock:  " << p.stock << "\n";
+    }
+}
 
 int main() {
-    auto repo = std::make_shared<PersistSQLite>(QStringLiteral("database.db"));
-    ProductoManager mgr(repo);
-    if (!mgr.init()) {
-        std::cerr << "No se pudo inicializar la persistencia SQLite.\n";
+    
+    auto repo = make_shared<PersistSQLite>("data/tienda.db");
+    ProductoManager manager(repo);
+
+    if (!manager.init()) {
+        cout << "❌ Error al inicializar la base de datos.\n";
         return 1;
     }
 
-    int opt = 0;
-    do {
-        std::cout << "\n=== TIENDA (Consola) ===\n";
-        std::cout << "1) Insertar\n2) Listar\n3) Actualizar por ID\n4) Eliminar por ID\n5) Salir\n> ";
-        std::cin >> opt;
-        if (opt == 1) {
-            Producto p;
-            std::cin.ignore();
-            std::cout << "Nombre: "; std::getline(std::cin, p.nombre);
-            std::cout << "Precio: "; std::cin >> p.precio;
-            std::cout << "Stock: "; std::cin >> p.stock;
-            if (mgr.insertar(p)) std::cout << "Insertado OK\n";
-            else std::cout << "Error insertando (validacion o BD)\n";
-        } else if (opt == 2) {
-            auto lista = mgr.listar();
-            std::cout << "---- Productos ----\n";
-            for (const auto &it : lista) {
-                std::cout << it.id << " | " << it.nombre << " | " << it.precio << " | " << it.stock << "\n";
-            }
-        } else if (opt == 3) {
-            Producto p;
-            std::cout << "ID a actualizar: "; std::cin >> p.id;
-            std::cin.ignore();
-            std::cout << "Nombre: "; std::getline(std::cin, p.nombre);
-            std::cout << "Precio: "; std::cin >> p.precio;
-            std::cout << "Stock: "; std::cin >> p.stock;
-            if (mgr.actualizar(p)) std::cout << "Actualizado OK\n"; else std::cout << "Error al actualizar\n";
-        } else if (opt == 4) {
-            int id; std::cout << "ID a eliminar: "; std::cin >> id;
-            if (mgr.eliminar(id)) std::cout << "Eliminado OK\n"; else std::cout << "No encontrado o error\n";
-        }
-    } while (opt != 5);
+    while (true) {
+        cout << R"(
+======= TIENDA (TUI) =======
+1. Listar productos
+2. Agregar producto
+3. Editar producto
+4. Eliminar producto
+5. Salir
+Opción: )";
 
-    mgr.cerrar();
-    std::cout << "Saliendo...\n";
-    return 0;
+        int opcion = pedirEntero("");
+
+        switch (opcion) {
+
+        case 2: {
+            Producto p;
+            p.nombre = pedirString("Nombre: ");
+            p.precio = pedirDouble("Precio: ");
+            p.stock  = pedirEntero("Stock: ");
+
+            if (manager.insertar(p))
+                cout << "✔ Producto agregado.\n";
+            else
+                cout << "❌ No se pudo agregar.\n";
+            break;
+        }
+
+        case 3: {
+            int id = pedirEntero("ID del producto a editar: ");
+
+            auto lista = manager.listar();
+            Producto encontrado;
+            bool existe = false;
+
+            for (auto& p : lista)
+                if (p.id == id) { encontrado = p; existe = true; }
+
+            if (!existe) {
+                cout << "❌ No existe ese ID.\n";
+                break;
+            }
+
+            cout << "\n--- Deja vacío para no modificar ---\n";
+
+            string nombre = pedirString("Nuevo nombre (" + encontrado.nombre + "): ");
+            string precioS = pedirString("Nuevo precio (" + to_string(encontrado.precio) + "): ");
+            string stockS  = pedirString("Nuevo stock (" + to_string(encontrado.stock) + "): ");
+
+            if (!nombre.empty()) encontrado.nombre = nombre;
+            if (!precioS.empty()) encontrado.precio = stod(precioS);
+            if (!stockS.empty())  encontrado.stock  = stoi(stockS);
+
+            if (manager.actualizar(encontrado))
+                cout << "✔ Producto actualizado.\n";
+            else
+                cout << "❌ No se pudo actualizar.\n";
+
+            break;
+        }
+
+        case 4: {
+            int id = pedirEntero("ID a eliminar: ");
+            if (manager.eliminar(id))
+                cout << "✔ Eliminado.\n";
+            else
+                cout << "❌ No se pudo eliminar.\n";
+            break;
+        }
+
+        case 1: {
+            auto lista = manager.listar();
+            mostrarProductos(lista);
+            break;
+        }
+
+        case 5:
+            manager.cerrar();
+            return 0;
+
+        default:
+            cout << "❌ Opción inválida.\n";
+        }
+    }
 }

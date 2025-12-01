@@ -160,6 +160,7 @@ src/CMakeFiles/tienda_consola.dir/vistas/consola/main_console.cpp.obj: \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/execution_defs.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
  C:/Users/Equipo/vanessa/src/managers/producto_manager.h \
  C:/Users/Equipo/vanessa/src/managers/manager_base.h \
  C:/Users/Equipo/vanessa/src/modelos/producto.h \
@@ -220,7 +221,6 @@ src/CMakeFiles/tienda_consola.dir/vistas/consola/main_console.cpp.obj: \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath \
  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/math.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h \
- C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/gamma.tcc \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/special_function_util.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/bessel_function.tcc \

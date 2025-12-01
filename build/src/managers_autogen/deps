@@ -1,0 +1,10 @@
+managers_autogen/timestamp: \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/FindCurses.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/FindPkgConfig.cmake \
+	C:/Users/Equipo/vanessa/src/CMakeLists.txt \
+	C:/Users/Equipo/vanessa/src/managers/producto_manager.cpp \
+	C:/Users/Equipo/vanessa/src/managers/producto_manager.h \
+	C:/Program\ Files/CMake/bin/cmake.exe

@@ -1,228 +1,186 @@
-#include "tui_curses.h"
 #include <curses.h>
 #include <string>
-#include <sstream>
-#include <limits>
-#include <iomanip>
-#include <cstring>
+#include "tui_curses.h"
 
-TuiCurses::TuiCurses(ProductoManager &mgr) : m_mgr(mgr) {
-    // nothing
-}
-
-TuiCurses::~TuiCurses() {
-    // nothing
-}
+TuiCurses::TuiCurses(ProductoManager &mgr) : m_mgr(mgr) {}
 
 void TuiCurses::run() {
     initscr();
-    cbreak();
     noecho();
-    keypad(stdscr, TRUE);
-    if (has_colors()) {
-        start_color();
-        use_default_colors();
-        init_pair(1, COLOR_WHITE, COLOR_BLUE); // header
-        init_pair(2, COLOR_YELLOW, -1); // highlight
-    }
+    cbreak();
+    curs_set(0);
 
-    int ch = 0;
+    int opcion = 0;
+
     while (true) {
         clear();
-        drawMain();
-        mvprintw(LINES - 2, 2, "Seleccione opcion (1-5): ");
-        refresh();
-        ch = getch();
-        if (ch == '1') listProducts();
-        else if (ch == '2') addProduct();
-        else if (ch == '3') editProduct();
-        else if (ch == '4') deleteProduct();
-        else if (ch == '5' || ch == 'q' || ch == 'Q') break;
+        mvprintw(1, 2, "=== TIENDA TUI ===");
+        mvprintw(3, 2, "1. Listar productos");
+        mvprintw(4, 2, "2. Agregar producto");
+        mvprintw(5, 2, "3. Editar producto");
+        mvprintw(6, 2, "4. Eliminar producto");
+        mvprintw(7, 2, "5. Salir");
+        mvprintw(9, 2, "Seleccione: ");
+        opcion = getch() - '0';
+
+        switch (opcion) {
+            case 1: listProducts(); break;
+            case 2: addProduct(); break;
+            case 3: editProduct(); break;
+            case 4: deleteProduct(); break;
+            case 5: endwin(); return;
+        }
     }
-
-    endwin();
-}
-
-void TuiCurses::drawMain() {
-    int w = COLS;
-    attron(COLOR_PAIR(1));
-    mvhline(0, 0, ' ', w);
-    mvprintw(0, 2, " TIENDA BELLEZA - TUI (PDCurses) ");
-    attroff(COLOR_PAIR(1));
-
-    mvprintw(2, 4, "1) Listar productos");
-    mvprintw(3, 4, "2) Agregar producto");
-    mvprintw(4, 4, "3) Editar producto (por ID)");
-    mvprintw(5, 4, "4) Eliminar producto (por ID)");
-    mvprintw(6, 4, "5) Salir (o 'q')");
-    mvprintw(8, 4, "Base de datos: database.db (raiz del proyecto)");
 }
 
 void TuiCurses::listProducts() {
     clear();
-    auto lista = m_mgr.listar();
-    mvprintw(0, 2, "Listado de productos (presione Up/Down para navegar, 'b' para volver)");
+    auto productos = m_mgr.listar();
 
-    int start = 0;
-    int cursor = 0;
-    int pageSize = LINES - 4;
-    int total = (int)lista.size();
+    mvprintw(1, 2, "=== LISTA DE PRODUCTOS ===");
 
-    bool running = true;
-    while (running) {
-        clear();
-        mvprintw(0, 2, "Listado de productos (Total: %d)", total);
-        for (int i = 0; i < pageSize && start + i < total; ++i) {
-            int idx = start + i;
-            if (idx == cursor) attron(A_REVERSE);
-            mvprintw(2 + i, 2, "%3d | %-30.30s | %8.2f | %4d",
-                     lista[idx].id,
-                     lista[idx].nombre.c_str(),
-                     lista[idx].precio,
-                     lista[idx].stock);
-            if (idx == cursor) attroff(A_REVERSE);
-        }
-        mvprintw(LINES - 1, 2, "Up/Down: navegar  PgUp/PgDn: paginas  'b' volver");
-        refresh();
-
-        int ch = getch();
-        switch (ch) {
-            case KEY_UP:
-                if (cursor > 0) cursor--;
-                if (cursor < start) start = cursor;
-                break;
-            case KEY_DOWN:
-                if (cursor < total - 1) {
-                    cursor++;
-                    if (cursor >= start + pageSize) start = cursor - pageSize + 1;
-                }
-                break;
-            case KEY_NPAGE: // Page Down
-                cursor = std::min(total - 1, cursor + pageSize);
-                start = std::min(std::max(0, cursor - pageSize + 1), std::max(0, total - pageSize));
-                break;
-            case KEY_PPAGE: // Page Up
-                cursor = std::max(0, cursor - pageSize);
-                start = std::max(0, std::min(cursor, total - pageSize));
-                break;
-            case 'b':
-            case 'B':
-            case 27: // ESC
-                running = false;
-                break;
-            default:
-                break;
-        }
-        if (total == 0) {
-            mvprintw(3, 2, "(No hay productos)");
-            getch();
-            running = false;
-        }
+    int y = 3;
+    for (auto &p : productos) {
+        mvprintw(y++, 2, "ID: %d | %s | %.2f Bs | Stock: %d",
+                 p.id, p.nombre.c_str(), p.precio, p.stock);
     }
+
+    mvprintw(y + 1, 2, "Presione una tecla para continuar...");
+    getch();
 }
 
 void TuiCurses::addProduct() {
-    echo();
-    curs_set(1);
     clear();
-    mvprintw(1, 2, "AGREGAR PRODUCTO (enter para confirmar)");
+    mvprintw(1, 2, "=== AGREGAR PRODUCTO ===");
+
     std::string nombre = promptString("Nombre: ");
     double precio = promptDouble("Precio: ");
     int stock = promptNumber("Stock: ");
+
     Producto p;
     p.nombre = nombre;
     p.precio = precio;
     p.stock = stock;
-    if (m_mgr.insertar(p)) {
-        mvprintw(LINES - 3, 2, "Producto insertado correctamente. Presione tecla.");
-    } else {
-        mvprintw(LINES - 3, 2, "Error insertando producto (validacion/DB). Presione tecla.");
-    }
-    noecho();
-    curs_set(0);
+
+    m_mgr.insertarProducto(p);
+
+    mvprintw(10, 2, "Producto agregado. Presione una tecla...");
     getch();
 }
 
 void TuiCurses::editProduct() {
-    echo();
-    curs_set(1);
     clear();
-    mvprintw(1, 2, "EDITAR PRODUCTO");
+    mvprintw(1, 2, "=== EDITAR PRODUCTO ===");
+
     int id = promptNumber("ID a editar: ");
-    // pedimos nuevos campos
-    std::string nombre = promptString("Nuevo nombre: ");
-    double precio = promptDouble("Nuevo precio: ");
-    int stock = promptNumber("Nuevo stock: ");
-    Producto p;
-    p.id = id;
-    p.nombre = nombre;
-    p.precio = precio;
-    p.stock = stock;
-    if (m_mgr.actualizar(p)) {
-        mvprintw(LINES - 3, 2, "Producto actualizado. Presione tecla.");
-    } else {
-        mvprintw(LINES - 3, 2, "Error al actualizar. Presione tecla.");
+
+    auto lista = m_mgr.listar();
+    bool existe = false;
+    Producto current;
+
+    for (auto &p : lista)
+        if (p.id == id) { current = p; existe = true; }
+
+    if (!existe) {
+        mvprintw(10, 2, "ID no encontrado. Tecla para volver...");
+        getch();
+        return;
     }
-    noecho();
-    curs_set(0);
+
+    std::string nombre = promptStringAllowEmpty("Nuevo nombre (enter = igual): ");
+    double precio = promptDoubleAllowEmpty("Nuevo precio (enter = igual): ", current.precio);
+    int stock = promptNumberAllowEmpty("Nuevo stock (enter = igual): ", current.stock);
+
+    if (!nombre.empty()) current.nombre = nombre;
+    current.precio = precio;
+    current.stock = stock;
+
+    m_mgr.actualizar(current);
+
+    mvprintw(15, 2, "Producto editado. Presione una tecla...");
     getch();
 }
 
 void TuiCurses::deleteProduct() {
-    echo();
-    curs_set(1);
     clear();
-    mvprintw(1, 2, "ELIMINAR PRODUCTO");
+    mvprintw(1, 2, "=== ELIMINAR PRODUCTO ===");
+
     int id = promptNumber("ID a eliminar: ");
-    if (m_mgr.eliminar(id)) {
-        mvprintw(LINES - 3, 2, "Producto eliminado. Presione tecla.");
-    } else {
-        mvprintw(LINES - 3, 2, "No encontrado o error. Presione tecla.");
-    }
-    noecho();
-    curs_set(0);
+
+    m_mgr.eliminar(id);
+
+    mvprintw(10, 2, "Producto eliminado. Presione una tecla...");
     getch();
 }
 
-int TuiCurses::promptNumber(const char *label, int minVal, int maxVal) {
-    char buf[128];
-    while (true) {
-        mvprintw(3, 2, "%s", label);
-        echo();
-        curs_set(1);
-        mvgetnstr(3, (int)strlen(label) + 3, buf, sizeof(buf) - 1);
-        noecho();
-        curs_set(0);
-        std::istringstream ss(buf);
-        long long val;
-        if ((ss >> val) && val >= minVal && val <= maxVal) return (int)val;
-        mvprintw(5, 2, "Entrada invalida. Intente de nuevo.");
-    }
-}
-
-double TuiCurses::promptDouble(const char *label, double minVal, double maxVal) {
-    char buf[256];
-    while (true) {
-        mvprintw(3, 2, "%s", label);
-        echo();
-        curs_set(1);
-        mvgetnstr(3, (int)strlen(label) + 3, buf, sizeof(buf) - 1);
-        noecho();
-        curs_set(0);
-        std::istringstream ss(buf);
-        double val;
-        if ((ss >> val) && val >= minVal && val <= maxVal) return val;
-        mvprintw(5, 2, "Entrada invalida. Intente de nuevo.");
-    }
-}
+// =========================
+// INPUT HELPERS
+// =========================
 
 std::string TuiCurses::promptString(const char *label) {
-    char buf[512];
-    mvprintw(3, 2, "%s", label);
     echo();
+    nocbreak();
     curs_set(1);
-    mvgetnstr(3, (int)strlen(label) + 3, buf, sizeof(buf) - 1);
+
+    mvprintw(12, 2, "%s", label);
+
+    char buffer[256];
+    getnstr(buffer, 255);
+
     noecho();
+    cbreak();
     curs_set(0);
-    return std::string(buf);
+
+    return std::string(buffer);
+}
+
+std::string TuiCurses::promptStringAllowEmpty(const char *label) {
+    echo();
+    nocbreak();
+    curs_set(1);
+
+    mvprintw(12, 2, "%s", label);
+
+    char buffer[256];
+    getnstr(buffer, 255);
+
+    noecho();
+    cbreak();
+    curs_set(0);
+
+    return std::string(buffer);
+}
+
+int TuiCurses::promptNumber(const char *label) {
+    while (true) {
+        std::string txt = promptString(label);
+        try {
+            return std::stoi(txt);
+        } catch (...) {
+            mvprintw(20, 2, "❌ Debe ser un número.");
+        }
+    }
+}
+
+int TuiCurses::promptNumberAllowEmpty(const char *label, int defaultVal) {
+    std::string txt = promptStringAllowEmpty(label);
+    if (txt.empty()) return defaultVal;
+    return std::stoi(txt);
+}
+
+double TuiCurses::promptDouble(const char *label) {
+    while (true) {
+        std::string txt = promptString(label);
+        try {
+            return std::stod(txt);
+        } catch (...) {
+            mvprintw(20, 2, "❌ Debe ser decimal.");
+        }
+    }
+}
+
+double TuiCurses::promptDoubleAllowEmpty(const char *label, double defaultVal) {
+    std::string txt = promptStringAllowEmpty(label);
+    if (txt.empty()) return defaultVal;
+    return std::stod(txt);
 }

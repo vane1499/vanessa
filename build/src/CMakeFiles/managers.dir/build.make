@@ -68,14 +68,36 @@ include src/CMakeFiles/managers.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/managers.dir/flags.make
 
+src/managers_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/moc.exe
+src/managers_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/uic.exe
+src/managers_autogen/timestamp: src/CMakeFiles/managers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target managers"
+	cd /d C:\Users\Equipo\vanessa\build\src && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Equipo/vanessa/build/src/CMakeFiles/managers_autogen.dir/AutogenInfo.json ""
+	cd /d C:\Users\Equipo\vanessa\build\src && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Equipo/vanessa/build/src/managers_autogen/timestamp
+
 src/CMakeFiles/managers.dir/codegen:
 .PHONY : src/CMakeFiles/managers.dir/codegen
+
+src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/managers.dir/flags.make
+src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/managers.dir/includes_CXX.rsp
+src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj: src/managers_autogen/mocs_compilation.cpp
+src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/managers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\managers.dir\managers_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\managers.dir\managers_autogen\mocs_compilation.cpp.obj -c C:\Users\Equipo\vanessa\build\src\managers_autogen\mocs_compilation.cpp
+
+src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.i"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\build\src\managers_autogen\mocs_compilation.cpp > CMakeFiles\managers.dir\managers_autogen\mocs_compilation.cpp.i
+
+src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.s"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\build\src\managers_autogen\mocs_compilation.cpp -o CMakeFiles\managers.dir\managers_autogen\mocs_compilation.cpp.s
 
 src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj: src/CMakeFiles/managers.dir/flags.make
 src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj: src/CMakeFiles/managers.dir/includes_CXX.rsp
 src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj: C:/Users/Equipo/vanessa/src/managers/producto_manager.cpp
 src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj: src/CMakeFiles/managers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj"
 	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj -MF CMakeFiles\managers.dir\managers\producto_manager.cpp.obj.d -o CMakeFiles\managers.dir\managers\producto_manager.cpp.obj -c C:\Users\Equipo\vanessa\src\managers\producto_manager.cpp
 
 src/CMakeFiles/managers.dir/managers/producto_manager.cpp.i: cmake_force
@@ -88,15 +110,17 @@ src/CMakeFiles/managers.dir/managers/producto_manager.cpp.s: cmake_force
 
 # Object files for target managers
 managers_OBJECTS = \
+"CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/managers.dir/managers/producto_manager.cpp.obj"
 
 # External object files for target managers
 managers_EXTERNAL_OBJECTS =
 
+src/libmanagers.a: src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj
 src/libmanagers.a: src/CMakeFiles/managers.dir/managers/producto_manager.cpp.obj
 src/libmanagers.a: src/CMakeFiles/managers.dir/build.make
 src/libmanagers.a: src/CMakeFiles/managers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmanagers.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libmanagers.a"
 	cd /d C:\Users\Equipo\vanessa\build\src && $(CMAKE_COMMAND) -P CMakeFiles\managers.dir\cmake_clean_target.cmake
 	cd /d C:\Users\Equipo\vanessa\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\managers.dir\link.txt --verbose=$(VERBOSE)
 
@@ -108,7 +132,7 @@ src/CMakeFiles/managers.dir/clean:
 	cd /d C:\Users\Equipo\vanessa\build\src && $(CMAKE_COMMAND) -P CMakeFiles\managers.dir\cmake_clean.cmake
 .PHONY : src/CMakeFiles/managers.dir/clean
 
-src/CMakeFiles/managers.dir/depend:
+src/CMakeFiles/managers.dir/depend: src/managers_autogen/timestamp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Equipo\vanessa C:\Users\Equipo\vanessa\src C:\Users\Equipo\vanessa\build C:\Users\Equipo\vanessa\build\src C:\Users\Equipo\vanessa\build\src\CMakeFiles\managers.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/managers.dir/depend
 

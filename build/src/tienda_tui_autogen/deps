@@ -1,0 +1,11 @@
+tienda_tui_autogen/timestamp: \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/FindCurses.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake \
+	C:/Program\ Files/CMake/share/cmake-4.1/Modules/FindPkgConfig.cmake \
+	C:/Users/Equipo/vanessa/src/CMakeLists.txt \
+	C:/Users/Equipo/vanessa/src/vistas/tui/main_tui.cpp \
+	C:/Users/Equipo/vanessa/src/vistas/tui/tui_curses.cpp \
+	C:/Users/Equipo/vanessa/src/vistas/tui/tui_curses.h \
+	C:/Program\ Files/CMake/bin/cmake.exe

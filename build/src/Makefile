@@ -185,6 +185,146 @@ tienda_tui/fast:
 	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/build
 .PHONY : tienda_tui/fast
 
+# Convenience name for target.
+src/CMakeFiles/modelos_autogen_timestamp_deps.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/modelos_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/modelos_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+modelos_autogen_timestamp_deps: src/CMakeFiles/modelos_autogen_timestamp_deps.dir/rule
+.PHONY : modelos_autogen_timestamp_deps
+
+# fast build rule for target.
+modelos_autogen_timestamp_deps/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen_timestamp_deps.dir\build.make src/CMakeFiles/modelos_autogen_timestamp_deps.dir/build
+.PHONY : modelos_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/modelos_autogen.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/modelos_autogen.dir/rule
+.PHONY : src/CMakeFiles/modelos_autogen.dir/rule
+
+# Convenience name for target.
+modelos_autogen: src/CMakeFiles/modelos_autogen.dir/rule
+.PHONY : modelos_autogen
+
+# fast build rule for target.
+modelos_autogen/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos_autogen.dir\build.make src/CMakeFiles/modelos_autogen.dir/build
+.PHONY : modelos_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+persistencia_autogen_timestamp_deps: src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/rule
+.PHONY : persistencia_autogen_timestamp_deps
+
+# fast build rule for target.
+persistencia_autogen_timestamp_deps/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen_timestamp_deps.dir\build.make src/CMakeFiles/persistencia_autogen_timestamp_deps.dir/build
+.PHONY : persistencia_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/persistencia_autogen.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/persistencia_autogen.dir/rule
+.PHONY : src/CMakeFiles/persistencia_autogen.dir/rule
+
+# Convenience name for target.
+persistencia_autogen: src/CMakeFiles/persistencia_autogen.dir/rule
+.PHONY : persistencia_autogen
+
+# fast build rule for target.
+persistencia_autogen/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia_autogen.dir\build.make src/CMakeFiles/persistencia_autogen.dir/build
+.PHONY : persistencia_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/managers_autogen_timestamp_deps.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/managers_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/managers_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+managers_autogen_timestamp_deps: src/CMakeFiles/managers_autogen_timestamp_deps.dir/rule
+.PHONY : managers_autogen_timestamp_deps
+
+# fast build rule for target.
+managers_autogen_timestamp_deps/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen_timestamp_deps.dir\build.make src/CMakeFiles/managers_autogen_timestamp_deps.dir/build
+.PHONY : managers_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/managers_autogen.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/managers_autogen.dir/rule
+.PHONY : src/CMakeFiles/managers_autogen.dir/rule
+
+# Convenience name for target.
+managers_autogen: src/CMakeFiles/managers_autogen.dir/rule
+.PHONY : managers_autogen
+
+# fast build rule for target.
+managers_autogen/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers_autogen.dir\build.make src/CMakeFiles/managers_autogen.dir/build
+.PHONY : managers_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+tienda_consola_autogen_timestamp_deps: src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/rule
+.PHONY : tienda_consola_autogen_timestamp_deps
+
+# fast build rule for target.
+tienda_consola_autogen_timestamp_deps/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_consola_autogen_timestamp_deps.dir/build
+.PHONY : tienda_consola_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/tienda_consola_autogen.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_consola_autogen.dir/rule
+.PHONY : src/CMakeFiles/tienda_consola_autogen.dir/rule
+
+# Convenience name for target.
+tienda_consola_autogen: src/CMakeFiles/tienda_consola_autogen.dir/rule
+.PHONY : tienda_consola_autogen
+
+# fast build rule for target.
+tienda_consola_autogen/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola_autogen.dir\build.make src/CMakeFiles/tienda_consola_autogen.dir/build
+.PHONY : tienda_consola_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+tienda_tui_autogen_timestamp_deps: src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/rule
+.PHONY : tienda_tui_autogen_timestamp_deps
+
+# fast build rule for target.
+tienda_tui_autogen_timestamp_deps/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen_timestamp_deps.dir\build.make src/CMakeFiles/tienda_tui_autogen_timestamp_deps.dir/build
+.PHONY : tienda_tui_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/tienda_tui_autogen.dir/rule:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/tienda_tui_autogen.dir/rule
+.PHONY : src/CMakeFiles/tienda_tui_autogen.dir/rule
+
+# Convenience name for target.
+tienda_tui_autogen: src/CMakeFiles/tienda_tui_autogen.dir/rule
+.PHONY : tienda_tui_autogen
+
+# fast build rule for target.
+tienda_tui_autogen/fast:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui_autogen.dir\build.make src/CMakeFiles/tienda_tui_autogen.dir/build
+.PHONY : tienda_tui_autogen/fast
+
 managers/producto_manager.obj: managers/producto_manager.cpp.obj
 .PHONY : managers/producto_manager.obj
 
@@ -208,6 +348,30 @@ managers/producto_manager.s: managers/producto_manager.cpp.s
 managers/producto_manager.cpp.s:
 	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers.dir\build.make src/CMakeFiles/managers.dir/managers/producto_manager.cpp.s
 .PHONY : managers/producto_manager.cpp.s
+
+managers_autogen/mocs_compilation.obj: managers_autogen/mocs_compilation.cpp.obj
+.PHONY : managers_autogen/mocs_compilation.obj
+
+# target to build an object file
+managers_autogen/mocs_compilation.cpp.obj:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers.dir\build.make src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.obj
+.PHONY : managers_autogen/mocs_compilation.cpp.obj
+
+managers_autogen/mocs_compilation.i: managers_autogen/mocs_compilation.cpp.i
+.PHONY : managers_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+managers_autogen/mocs_compilation.cpp.i:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers.dir\build.make src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.i
+.PHONY : managers_autogen/mocs_compilation.cpp.i
+
+managers_autogen/mocs_compilation.s: managers_autogen/mocs_compilation.cpp.s
+.PHONY : managers_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+managers_autogen/mocs_compilation.cpp.s:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\managers.dir\build.make src/CMakeFiles/managers.dir/managers_autogen/mocs_compilation.cpp.s
+.PHONY : managers_autogen/mocs_compilation.cpp.s
 
 modelos/producto.obj: modelos/producto.cpp.obj
 .PHONY : modelos/producto.obj
@@ -233,6 +397,30 @@ modelos/producto.cpp.s:
 	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos.dir\build.make src/CMakeFiles/modelos.dir/modelos/producto.cpp.s
 .PHONY : modelos/producto.cpp.s
 
+modelos_autogen/mocs_compilation.obj: modelos_autogen/mocs_compilation.cpp.obj
+.PHONY : modelos_autogen/mocs_compilation.obj
+
+# target to build an object file
+modelos_autogen/mocs_compilation.cpp.obj:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos.dir\build.make src/CMakeFiles/modelos.dir/modelos_autogen/mocs_compilation.cpp.obj
+.PHONY : modelos_autogen/mocs_compilation.cpp.obj
+
+modelos_autogen/mocs_compilation.i: modelos_autogen/mocs_compilation.cpp.i
+.PHONY : modelos_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+modelos_autogen/mocs_compilation.cpp.i:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos.dir\build.make src/CMakeFiles/modelos.dir/modelos_autogen/mocs_compilation.cpp.i
+.PHONY : modelos_autogen/mocs_compilation.cpp.i
+
+modelos_autogen/mocs_compilation.s: modelos_autogen/mocs_compilation.cpp.s
+.PHONY : modelos_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+modelos_autogen/mocs_compilation.cpp.s:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\modelos.dir\build.make src/CMakeFiles/modelos.dir/modelos_autogen/mocs_compilation.cpp.s
+.PHONY : modelos_autogen/mocs_compilation.cpp.s
+
 persistencia/persist_sqlite.obj: persistencia/persist_sqlite.cpp.obj
 .PHONY : persistencia/persist_sqlite.obj
 
@@ -256,6 +444,78 @@ persistencia/persist_sqlite.s: persistencia/persist_sqlite.cpp.s
 persistencia/persist_sqlite.cpp.s:
 	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia.dir\build.make src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.s
 .PHONY : persistencia/persist_sqlite.cpp.s
+
+persistencia_autogen/mocs_compilation.obj: persistencia_autogen/mocs_compilation.cpp.obj
+.PHONY : persistencia_autogen/mocs_compilation.obj
+
+# target to build an object file
+persistencia_autogen/mocs_compilation.cpp.obj:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia.dir\build.make src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj
+.PHONY : persistencia_autogen/mocs_compilation.cpp.obj
+
+persistencia_autogen/mocs_compilation.i: persistencia_autogen/mocs_compilation.cpp.i
+.PHONY : persistencia_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+persistencia_autogen/mocs_compilation.cpp.i:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia.dir\build.make src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.i
+.PHONY : persistencia_autogen/mocs_compilation.cpp.i
+
+persistencia_autogen/mocs_compilation.s: persistencia_autogen/mocs_compilation.cpp.s
+.PHONY : persistencia_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+persistencia_autogen/mocs_compilation.cpp.s:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\persistencia.dir\build.make src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.s
+.PHONY : persistencia_autogen/mocs_compilation.cpp.s
+
+tienda_consola_autogen/mocs_compilation.obj: tienda_consola_autogen/mocs_compilation.cpp.obj
+.PHONY : tienda_consola_autogen/mocs_compilation.obj
+
+# target to build an object file
+tienda_consola_autogen/mocs_compilation.cpp.obj:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola.dir\build.make src/CMakeFiles/tienda_consola.dir/tienda_consola_autogen/mocs_compilation.cpp.obj
+.PHONY : tienda_consola_autogen/mocs_compilation.cpp.obj
+
+tienda_consola_autogen/mocs_compilation.i: tienda_consola_autogen/mocs_compilation.cpp.i
+.PHONY : tienda_consola_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+tienda_consola_autogen/mocs_compilation.cpp.i:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola.dir\build.make src/CMakeFiles/tienda_consola.dir/tienda_consola_autogen/mocs_compilation.cpp.i
+.PHONY : tienda_consola_autogen/mocs_compilation.cpp.i
+
+tienda_consola_autogen/mocs_compilation.s: tienda_consola_autogen/mocs_compilation.cpp.s
+.PHONY : tienda_consola_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+tienda_consola_autogen/mocs_compilation.cpp.s:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_consola.dir\build.make src/CMakeFiles/tienda_consola.dir/tienda_consola_autogen/mocs_compilation.cpp.s
+.PHONY : tienda_consola_autogen/mocs_compilation.cpp.s
+
+tienda_tui_autogen/mocs_compilation.obj: tienda_tui_autogen/mocs_compilation.cpp.obj
+.PHONY : tienda_tui_autogen/mocs_compilation.obj
+
+# target to build an object file
+tienda_tui_autogen/mocs_compilation.cpp.obj:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.obj
+.PHONY : tienda_tui_autogen/mocs_compilation.cpp.obj
+
+tienda_tui_autogen/mocs_compilation.i: tienda_tui_autogen/mocs_compilation.cpp.i
+.PHONY : tienda_tui_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+tienda_tui_autogen/mocs_compilation.cpp.i:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.i
+.PHONY : tienda_tui_autogen/mocs_compilation.cpp.i
+
+tienda_tui_autogen/mocs_compilation.s: tienda_tui_autogen/mocs_compilation.cpp.s
+.PHONY : tienda_tui_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+tienda_tui_autogen/mocs_compilation.cpp.s:
+	cd /d C:\Users\Equipo\vanessa\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\tienda_tui.dir\build.make src/CMakeFiles/tienda_tui.dir/tienda_tui_autogen/mocs_compilation.cpp.s
+.PHONY : tienda_tui_autogen/mocs_compilation.cpp.s
 
 vistas/consola/main_console.obj: vistas/consola/main_console.cpp.obj
 .PHONY : vistas/consola/main_console.obj
@@ -337,6 +597,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... managers_autogen
+	@echo ... managers_autogen_timestamp_deps
+	@echo ... modelos_autogen
+	@echo ... modelos_autogen_timestamp_deps
+	@echo ... persistencia_autogen
+	@echo ... persistencia_autogen_timestamp_deps
+	@echo ... tienda_consola_autogen
+	@echo ... tienda_consola_autogen_timestamp_deps
+	@echo ... tienda_tui_autogen
+	@echo ... tienda_tui_autogen_timestamp_deps
 	@echo ... managers
 	@echo ... modelos
 	@echo ... persistencia
@@ -345,12 +615,27 @@ help:
 	@echo ... managers/producto_manager.obj
 	@echo ... managers/producto_manager.i
 	@echo ... managers/producto_manager.s
+	@echo ... managers_autogen/mocs_compilation.obj
+	@echo ... managers_autogen/mocs_compilation.i
+	@echo ... managers_autogen/mocs_compilation.s
 	@echo ... modelos/producto.obj
 	@echo ... modelos/producto.i
 	@echo ... modelos/producto.s
+	@echo ... modelos_autogen/mocs_compilation.obj
+	@echo ... modelos_autogen/mocs_compilation.i
+	@echo ... modelos_autogen/mocs_compilation.s
 	@echo ... persistencia/persist_sqlite.obj
 	@echo ... persistencia/persist_sqlite.i
 	@echo ... persistencia/persist_sqlite.s
+	@echo ... persistencia_autogen/mocs_compilation.obj
+	@echo ... persistencia_autogen/mocs_compilation.i
+	@echo ... persistencia_autogen/mocs_compilation.s
+	@echo ... tienda_consola_autogen/mocs_compilation.obj
+	@echo ... tienda_consola_autogen/mocs_compilation.i
+	@echo ... tienda_consola_autogen/mocs_compilation.s
+	@echo ... tienda_tui_autogen/mocs_compilation.obj
+	@echo ... tienda_tui_autogen/mocs_compilation.i
+	@echo ... tienda_tui_autogen/mocs_compilation.s
 	@echo ... vistas/consola/main_console.obj
 	@echo ... vistas/consola/main_console.i
 	@echo ... vistas/consola/main_console.s

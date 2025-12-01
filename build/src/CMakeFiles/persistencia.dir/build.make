@@ -68,14 +68,36 @@ include src/CMakeFiles/persistencia.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/persistencia.dir/flags.make
 
+src/persistencia_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/moc.exe
+src/persistencia_autogen/timestamp: C:/Qt/6.5.3/mingw_64/./bin/uic.exe
+src/persistencia_autogen/timestamp: src/CMakeFiles/persistencia.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target persistencia"
+	cd /d C:\Users\Equipo\vanessa\build\src && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Equipo/vanessa/build/src/CMakeFiles/persistencia_autogen.dir/AutogenInfo.json ""
+	cd /d C:\Users\Equipo\vanessa\build\src && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Equipo/vanessa/build/src/persistencia_autogen/timestamp
+
 src/CMakeFiles/persistencia.dir/codegen:
 .PHONY : src/CMakeFiles/persistencia.dir/codegen
+
+src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/persistencia.dir/flags.make
+src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/persistencia.dir/includes_CXX.rsp
+src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj: src/persistencia_autogen/mocs_compilation.cpp
+src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/persistencia.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\persistencia.dir\persistencia_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\persistencia.dir\persistencia_autogen\mocs_compilation.cpp.obj -c C:\Users\Equipo\vanessa\build\src\persistencia_autogen\mocs_compilation.cpp
+
+src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.i"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Equipo\vanessa\build\src\persistencia_autogen\mocs_compilation.cpp > CMakeFiles\persistencia.dir\persistencia_autogen\mocs_compilation.cpp.i
+
+src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.s"
+	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Equipo\vanessa\build\src\persistencia_autogen\mocs_compilation.cpp -o CMakeFiles\persistencia.dir\persistencia_autogen\mocs_compilation.cpp.s
 
 src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj: src/CMakeFiles/persistencia.dir/flags.make
 src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj: src/CMakeFiles/persistencia.dir/includes_CXX.rsp
 src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj: C:/Users/Equipo/vanessa/src/persistencia/persist_sqlite.cpp
 src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj: src/CMakeFiles/persistencia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj"
 	cd /d C:\Users\Equipo\vanessa\build\src && C:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj -MF CMakeFiles\persistencia.dir\persistencia\persist_sqlite.cpp.obj.d -o CMakeFiles\persistencia.dir\persistencia\persist_sqlite.cpp.obj -c C:\Users\Equipo\vanessa\src\persistencia\persist_sqlite.cpp
 
 src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.i: cmake_force
@@ -88,15 +110,17 @@ src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.s: cmake_force
 
 # Object files for target persistencia
 persistencia_OBJECTS = \
+"CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj"
 
 # External object files for target persistencia
 persistencia_EXTERNAL_OBJECTS =
 
+src/libpersistencia.a: src/CMakeFiles/persistencia.dir/persistencia_autogen/mocs_compilation.cpp.obj
 src/libpersistencia.a: src/CMakeFiles/persistencia.dir/persistencia/persist_sqlite.cpp.obj
 src/libpersistencia.a: src/CMakeFiles/persistencia.dir/build.make
 src/libpersistencia.a: src/CMakeFiles/persistencia.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libpersistencia.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Equipo\vanessa\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libpersistencia.a"
 	cd /d C:\Users\Equipo\vanessa\build\src && $(CMAKE_COMMAND) -P CMakeFiles\persistencia.dir\cmake_clean_target.cmake
 	cd /d C:\Users\Equipo\vanessa\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\persistencia.dir\link.txt --verbose=$(VERBOSE)
 
@@ -108,7 +132,7 @@ src/CMakeFiles/persistencia.dir/clean:
 	cd /d C:\Users\Equipo\vanessa\build\src && $(CMAKE_COMMAND) -P CMakeFiles\persistencia.dir\cmake_clean.cmake
 .PHONY : src/CMakeFiles/persistencia.dir/clean
 
-src/CMakeFiles/persistencia.dir/depend:
+src/CMakeFiles/persistencia.dir/depend: src/persistencia_autogen/timestamp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Equipo\vanessa C:\Users\Equipo\vanessa\src C:\Users\Equipo\vanessa\build C:\Users\Equipo\vanessa\build\src C:\Users\Equipo\vanessa\build\src\CMakeFiles\persistencia.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/persistencia.dir/depend
 
