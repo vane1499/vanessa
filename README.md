@@ -82,7 +82,7 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
 4. Cargando para que no haya fallos:
 
    ```powershell
-   mingw32-make
+   mingw32-make -j8
    ```
 5. Si todo salio bien, entrar a la carpeta "src" para poder correr desde algun artefacto a escoger
 - Para correr la consola:
@@ -93,10 +93,13 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
  ```powershell
    tienda_tui.exe
  ```
- - Para correr Desktop:
+ - Para correr Desktop se tiene que entrar a desktop(es fuera de src):
  ```powershell
-
+  cd ..
+  cd desktop
+  tienda_desktop.exe
  ```
+ 
  ---
 
 
