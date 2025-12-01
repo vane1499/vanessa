@@ -74,9 +74,10 @@ Antes de compilar el proyecto en una nueva PC, asegúrate de tener instalado:
 
    ```powershell
    cmake .. -G "MinGW Makefiles" ^
- -DCURSES_LIBRARY="C:/pdcurses/wincon/pdcurses.a" ^
- -DCURSES_INCLUDE_PATH="C:/pdcurses"
+     -DCURSES_LIBRARY="C:/pdcurses/wincon/pdcurses.a" ^
+     -DCURSES_INCLUDE_PATH="C:/pdcurses"
    ```
+
 4. Cargando para que no haya fallos:
 
    ```powershell
@@ -113,8 +114,8 @@ dir "C:\Qt\6.5.3\mingw_64\bin\uic.exe"
 Si todos responden sin error, ya puedes compilar el proyecto 🚀
 
 ---
-
-comandos para REINICIAR todos los registros o productos guardados en el proyecto
+# ¡¡¡¡¡CUIDADO!!!!
+## Comandos para REINICIAR todos los registros o productos guardados en el proyecto
 
 ```powershell
 rmdir /s /q build
